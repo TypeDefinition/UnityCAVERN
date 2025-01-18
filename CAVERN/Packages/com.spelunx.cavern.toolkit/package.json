@@ -1,0 +1,21 @@
+{
+  "name": "com.spelunx.cavern.toolkit",
+  "version": "0.1.0",
+  "displayName": "Spelunx CAVERN Toolkit",
+  "description": "Toolkit for CAVERN Development.",
+  "unity": "6000.0",
+  "documentationUrl": "https://example.com/",
+  "changelogUrl": "https://example.com/changelog.html",
+  "licensesUrl": "https://example.com/licensing.html",
+  "keywords": [
+    "ETC",
+    "CAVERN",
+    "Toolkit",
+    "Spelunx"
+  ],
+  "author": {
+    "name": "Spelunx",
+    "email": "terrylim@andrew.cmu.edu",
+    "url": "https://www.example.com"
+  }
+}
