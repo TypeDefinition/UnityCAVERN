@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "CAVERN Toolkit", "index.html", [
+  [ "Spelunx CAVERN Toolkit", "index.html", [
     [ "CHANGELOG", "df/d11/md_CAVERN_Packages_com_spelunx_cavern_toolkit_CHANGELOG.html", null ],
     [ "README", "d3/dd7/md_CAVERN_Packages_com_spelunx_cavern_toolkit_README.html", null ],
     [ "Namespaces", "namespaces.html", [
