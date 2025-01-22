@@ -26,13 +26,21 @@ var NAVTREE =
 [
   [ "CAVERN Toolkit", "index.html", [
     [ "CHANGELOG", "df/d11/md_CAVERN_Packages_com_spelunx_cavern_toolkit_CHANGELOG.html", null ],
-    [ "README", "d3/dd7/md_CAVERN_Packages_com_spelunx_cavern_toolkit_README.html", null ]
+    [ "README", "d3/dd7/md_CAVERN_Packages_com_spelunx_cavern_toolkit_README.html", null ],
+    [ "Classes", "annotated.html", [
+      [ "Class List", "annotated.html", "annotated_dup" ],
+      [ "Class Index", "classes.html", null ],
+      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ]
+    ] ],
+    [ "Files", "files.html", [
+      [ "File List", "files.html", "files_dup" ]
+    ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"d3/dd7/md_CAVERN_Packages_com_spelunx_cavern_toolkit_README.html"
+"annotated.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
