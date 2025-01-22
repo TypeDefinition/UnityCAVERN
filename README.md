@@ -1,3 +1,3 @@
 # Spelunx CAVERN Toolkit
 
-API Documentation: https://typedefinition.github.io/UnityCAVERN/
+API Documentation: https://api.spelunx.net/
