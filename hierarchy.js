@@ -1,6 +1,6 @@
 var hierarchy =
 [
     [ "MonoBehaviour", null, [
-      [ "DoxygenPlaceholder", "d3/dbd/classDoxygenPlaceholder.html", null ]
+      [ "Spelunx.DoxygenPlaceholder", "de/d0e/classSpelunx_1_1DoxygenPlaceholder.html", null ]
     ] ]
 ];

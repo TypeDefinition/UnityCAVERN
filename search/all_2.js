@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['readme_0',['README',['../d3/dd7/md_CAVERN_Packages_com_spelunx_cavern_toolkit_README.html',1,'']]]
+  ['doxygenplaceholder_0',['DoxygenPlaceholder',['../de/d0e/classSpelunx_1_1DoxygenPlaceholder.html',1,'Spelunx']]],
+  ['doxygenplaceholder_2ecs_1',['DoxygenPlaceholder.cs',['../d3/d98/DoxygenPlaceholder_8cs.html',1,'']]]
 ];
