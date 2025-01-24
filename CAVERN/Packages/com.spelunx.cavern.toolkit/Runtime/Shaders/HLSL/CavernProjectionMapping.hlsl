@@ -46,8 +46,7 @@ Vert2Frag Vertex(Attributes input) {
 // It must have a float4 return type and have the SV_TARGET semantic.
 // Values in the Vert2Frag have been interpolated based on each pixel's position.
 float4 Fragment(Vert2Frag input) : SV_TARGET {
-    float4 colorSample = SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, input.uv);
-    return colorSample;
+    return SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, input.uv);
 }
 
 #endif // CAVERN_PROJECTION_HLSL

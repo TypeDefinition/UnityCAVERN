@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: CavernRenderSettings
   m_EditorClassIdentifier: 
   stereoSeparation: 0.064
-  rigType: 1
+  rigType: 0
   camOutputMode: 0
   stereoMode: 1
   cropRect:

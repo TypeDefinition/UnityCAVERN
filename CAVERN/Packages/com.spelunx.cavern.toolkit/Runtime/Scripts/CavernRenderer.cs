@@ -65,10 +65,28 @@ namespace Spelunx {
         }
 
         private void RenderEyes() {
+            int faceMask = 0;
+            faceMask |= 1 << (int)CubemapFace.PositiveX;
+            faceMask |= 1 << (int)CubemapFace.NegativeX;
+            faceMask |= 1 << (int)CubemapFace.PositiveY;
+            faceMask |= 1 << (int)CubemapFace.NegativeY;
+            faceMask |= 1 << (int)CubemapFace.PositiveZ;
+            faceMask |= 1 << (int)CubemapFace.NegativeZ;
+
             Camera camera = GetComponent<Camera>();
-            int faceMask = (int)(CubemapFace.PositiveX | CubemapFace.NegativeX | CubemapFace.PositiveY | CubemapFace.NegativeY | CubemapFace.PositiveZ | CubemapFace.NegativeZ);
-            camera.RenderToCubemap(cubemapMonoEye, faceMask, Camera.MonoOrStereoscopicEye.Mono);
-            cubemapMonoEye.ConvertToEquirect(equirectangularProjection, Camera.MonoOrStereoscopicEye.Mono);
+            switch (stereoMode) {
+                case StereoMode.Off:
+                    camera.RenderToCubemap(cubemapMonoEye, faceMask, Camera.MonoOrStereoscopicEye.Mono);
+                    cubemapMonoEye.ConvertToEquirect(equirectangularProjection, Camera.MonoOrStereoscopicEye.Mono);
+                    break;
+                case StereoMode.On:
+                    camera.stereoSeparation = ipd;
+                    camera.RenderToCubemap(cubemapLeftEye, faceMask, Camera.MonoOrStereoscopicEye.Left);
+                    camera.RenderToCubemap(cubemapRightEye, faceMask, Camera.MonoOrStereoscopicEye.Right);
+                    cubemapLeftEye.ConvertToEquirect(equirectangularProjection, Camera.MonoOrStereoscopicEye.Left);
+                    cubemapRightEye.ConvertToEquirect(equirectangularProjection, Camera.MonoOrStereoscopicEye.Right);
+                    break;
+            }
         }
 
         private void OnEndContextRendering(ScriptableRenderContext context, List<Camera> cameras) {
