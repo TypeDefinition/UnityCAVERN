@@ -9,7 +9,7 @@
 
 // Material Properties
 // Textures are a little more complicated to deal with.
-TEXTURE2D(_MainTex); // TEXTURE2D is actually a macro, not a type. This is because behind the scenes, HLSL will replace this with whatever texture type the graphics API you're using. (OpenGL, DirectX, Metal, Vulkan, etc.)
+TEXTURECUBE(_MainTex); // TEXTURECUBE is actually a macro, not a type. This is because behind the scenes, HLSL will replace this with whatever texture type the graphics API you're using. (OpenGL, DirectX, Metal, Vulkan, etc.)
 SAMPLER(sampler_MainTex); // The sampler MUST be named "sampler_" + "texture name".
 float4 _MainTex_ST; // This contains the UV tiling and offset data, and is automatically set by Unity. It MUST be named "texture name" + "_ST". Used in TRANSFORM_TEX to apply UV tiling.
 
@@ -46,7 +46,19 @@ Vert2Frag Vertex(Attributes input) {
 // It must have a float4 return type and have the SV_TARGET semantic.
 // Values in the Vert2Frag have been interpolated based on each pixel's position.
 float4 Fragment(Vert2Frag input) : SV_TARGET {
-    return SAMPLE_TEXTURE2D(_MainTex, sampler_MainTex, input.uv);
+    float radius = 3.0f;
+    float height = 1.0f;
+    
+    float x = input.uv.x * 2.0f - 1.0f;
+    float y = input.uv.y * 2.0f - 1.0f;
+    
+    float horizontalAngle = radians(x * 135.0f);
+    float xPos = radius * sin(horizontalAngle);
+    float zPos = radius * cos(horizontalAngle);
+    float yPos = y * height;
+    
+    float3 uv = float3(xPos, yPos, zPos);
+    return SAMPLE_TEXTURECUBE(_MainTex, sampler_MainTex, uv);
 }
 
 #endif // CAVERN_PROJECTION_HLSL

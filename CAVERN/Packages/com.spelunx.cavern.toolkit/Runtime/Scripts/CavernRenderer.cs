@@ -18,10 +18,11 @@ namespace Spelunx {
         [SerializeField] private Shader shader;
 
         private Material material;
-        private RenderTexture cubemapMonoEye; // Mono
-        private RenderTexture cubemapLeftEye; // Left Eye
-        private RenderTexture cubemapRightEye; // Right Eye
-        private RenderTexture equirectangularProjection; // Equirectangular Projection
+        [SerializeField] private RenderTexture cubemapMonoEye; // Mono
+        // private RenderTexture cubemapLeftEye; // Left Eye
+        // private RenderTexture cubemapRightEye; // Right Eye
+        // private RenderTexture equirectangularProjection; // Equirectangular Projection
+        [SerializeField] private RenderTexture textureWall;
 
         public float GetIPD() { return ipd; }
         public StereoMode GetStereoMode() { return stereoMode; }
@@ -36,21 +37,21 @@ namespace Spelunx {
 
         private void Awake() {
             // Initialise render textures.
-            cubemapMonoEye = new RenderTexture(2048, 2048, 32, RenderTextureFormat.ARGB32);
-            cubemapMonoEye.dimension = TextureDimension.Cube;
-            cubemapMonoEye.wrapMode = TextureWrapMode.Clamp;
+            // cubemapMonoEye = new RenderTexture(2048, 2048, 32, RenderTextureFormat.ARGB32);
+            // cubemapMonoEye.dimension = TextureDimension.Cube;
+            // cubemapMonoEye.wrapMode = TextureWrapMode.Clamp;
 
-            cubemapLeftEye = new RenderTexture(2048, 2048, 32, RenderTextureFormat.ARGB32);
-            cubemapLeftEye.dimension = TextureDimension.Cube;
-            cubemapLeftEye.wrapMode = TextureWrapMode.Clamp;
+            // cubemapLeftEye = new RenderTexture(2048, 2048, 32, RenderTextureFormat.ARGB32);
+            // cubemapLeftEye.dimension = TextureDimension.Cube;
+            // cubemapLeftEye.wrapMode = TextureWrapMode.Clamp;
 
-            cubemapRightEye = new RenderTexture(2048, 2048, 32, RenderTextureFormat.ARGB32);
-            cubemapRightEye.dimension = TextureDimension.Cube;
-            cubemapRightEye.wrapMode = TextureWrapMode.Clamp;
+            // cubemapRightEye = new RenderTexture(2048, 2048, 32, RenderTextureFormat.ARGB32);
+            // cubemapRightEye.dimension = TextureDimension.Cube;
+            // cubemapRightEye.wrapMode = TextureWrapMode.Clamp;
 
-            equirectangularProjection = new RenderTexture(screenResolution.x, screenResolution.y, 32, RenderTextureFormat.ARGB32);
-            equirectangularProjection.dimension = TextureDimension.Tex2D;
-            equirectangularProjection.wrapMode = TextureWrapMode.Clamp;
+            // equirectangularProjection = new RenderTexture(screenResolution.x, screenResolution.y, 32, RenderTextureFormat.ARGB32);
+            // equirectangularProjection.dimension = TextureDimension.Tex2D;
+            // equirectangularProjection.wrapMode = TextureWrapMode.Clamp;
 
             // Initialise material.
             material = new Material(shader);
@@ -77,20 +78,21 @@ namespace Spelunx {
             switch (stereoMode) {
                 case StereoMode.Off:
                     camera.RenderToCubemap(cubemapMonoEye, faceMask, Camera.MonoOrStereoscopicEye.Mono);
-                    cubemapMonoEye.ConvertToEquirect(equirectangularProjection, Camera.MonoOrStereoscopicEye.Mono);
+                    // cubemapMonoEye.ConvertToEquirect(equirectangularProjection, Camera.MonoOrStereoscopicEye.Mono);
                     break;
                 case StereoMode.On:
                     camera.stereoSeparation = ipd;
-                    camera.RenderToCubemap(cubemapLeftEye, faceMask, Camera.MonoOrStereoscopicEye.Left);
-                    camera.RenderToCubemap(cubemapRightEye, faceMask, Camera.MonoOrStereoscopicEye.Right);
-                    cubemapLeftEye.ConvertToEquirect(equirectangularProjection, Camera.MonoOrStereoscopicEye.Left);
-                    cubemapRightEye.ConvertToEquirect(equirectangularProjection, Camera.MonoOrStereoscopicEye.Right);
+                    // camera.RenderToCubemap(cubemapLeftEye, faceMask, Camera.MonoOrStereoscopicEye.Left);
+                    // camera.RenderToCubemap(cubemapRightEye, faceMask, Camera.MonoOrStereoscopicEye.Right);
+                    // cubemapLeftEye.ConvertToEquirect(equirectangularProjection, Camera.MonoOrStereoscopicEye.Left);
+                    // cubemapRightEye.ConvertToEquirect(equirectangularProjection, Camera.MonoOrStereoscopicEye.Right);
                     break;
             }
         }
 
         private void OnEndContextRendering(ScriptableRenderContext context, List<Camera> cameras) {
-            Graphics.Blit(equirectangularProjection, material);
+            // Graphics.Blit(cubemapMonoEye, textureWall, material);
+            Graphics.Blit(cubemapMonoEye, material);
         }
     }
 }

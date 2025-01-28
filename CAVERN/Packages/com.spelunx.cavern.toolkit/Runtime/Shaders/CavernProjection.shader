@@ -4,7 +4,7 @@ Shader "Spelunx/CavernProjection" {
     // List of property types: https://docs.unity3d.com/Manual/SL-Properties.html
     Properties {
         [Header(Projection Options)]
-        [MainTexture] _MainTex ("Equirectangular Projection", 2D) = "white" {}
+        [MainTexture] _MainTex ("Equirectangular Projection", Cube) = "white" {}
     }
 
     SubShader {
