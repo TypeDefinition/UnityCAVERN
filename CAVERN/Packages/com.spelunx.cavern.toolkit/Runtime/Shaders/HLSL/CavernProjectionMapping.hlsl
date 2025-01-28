@@ -7,11 +7,21 @@
 // The HLSL shader files for the URP are in the Packages/com.unity.render-pipelines.universal/ShaderLibrary/ folder in your project.
 #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Lighting.hlsl"
 
-// Material Properties
-// Textures are a little more complicated to deal with.
-TEXTURECUBE(_MainTex); // TEXTURECUBE is actually a macro, not a type. This is because behind the scenes, HLSL will replace this with whatever texture type the graphics API you're using. (OpenGL, DirectX, Metal, Vulkan, etc.)
-SAMPLER(sampler_MainTex); // The sampler MUST be named "sampler_" + "texture name".
-float4 _MainTex_ST; // This contains the UV tiling and offset data, and is automatically set by Unity. It MUST be named "texture name" + "_ST". Used in TRANSFORM_TEX to apply UV tiling.
+// Textures
+TEXTURECUBE(_CubemapMonoEye);
+SAMPLER(sampler_CubemapMonoEye);
+float4 _CubemapMonoEye_ST;
+
+TEXTURECUBE(_CubemapLeftEye);
+SAMPLER(sampler_CubemapLeftEye);
+float4 _CubemapLeftEye_ST;
+
+TEXTURECUBE(_CubemapRightEye);
+SAMPLER(sampler_CubemapRightEye);
+float4 _CubemapRightEye_ST;
+
+// Other Material Properties
+int _EnableStereo;
 
 // This attributes struct receives data about the mesh we are currently rendering.
 // Data is automatically placed in the fields according to their semantic.
@@ -37,9 +47,19 @@ Vert2Frag Vertex(Attributes input) {
 
     Vert2Frag output;
     output.positionCS = positionInputs.positionCS; // Set the clip space position.
-    output.uv = TRANSFORM_TEX(input.uv, _MainTex); // Get the UV position after applying offset & tiling.
+    output.uv = input.uv;
 
     return output;
+}
+
+// Assume left eye is on top.
+float2 ConvertLeftEyeUV(float2 input) {
+    return float2(input.x, (input.y - 0.5) * 2.0);
+}
+
+// Assume right eye is on the bottom.
+float2 ConvertRightEyeUV(float2 input) {
+    return float2(input.x, input.y * 2.0);
 }
 
 // The fragment function, runs once per pixel on the screen.
@@ -49,16 +69,43 @@ float4 Fragment(Vert2Frag input) : SV_TARGET {
     float radius = 3.0f;
     float height = 1.0f;
     
-    float x = input.uv.x * 2.0f - 1.0f;
-    float y = input.uv.y * 2.0f - 1.0f;
+    float2 convertedUV = input.uv;
+    // Left Eye
+    if (_EnableStereo)
+    {
+        if (input.uv.y > 0.5)
+        {
+            convertedUV = ConvertLeftEyeUV(input.uv);
+        }
+    // Right Eye
+        else
+        {
+            convertedUV = ConvertRightEyeUV(input.uv);
+        }
+    }
+    
+    float x = convertedUV.x * 2.0f - 1.0f;
+    float y = convertedUV.y * 2.0f - 1.0f;
     
     float horizontalAngle = radians(x * 135.0f);
     float xPos = radius * sin(horizontalAngle);
     float zPos = radius * cos(horizontalAngle);
     float yPos = y * height;
     
+    // 3D uv
     float3 uv = float3(xPos, yPos, zPos);
-    return SAMPLE_TEXTURECUBE(_MainTex, sampler_MainTex, uv);
+    
+    // Left Eye
+    if (_EnableStereo)
+    {
+        if (input.uv.y > 0.5)
+        {
+            return SAMPLE_TEXTURECUBE(_CubemapLeftEye, sampler_CubemapLeftEye, uv);
+        }
+    // Right Eye
+        return SAMPLE_TEXTURECUBE(_CubemapRightEye, sampler_CubemapRightEye, uv);
+    }
+    return SAMPLE_TEXTURECUBE(_CubemapMonoEye, sampler_CubemapMonoEye, uv);
 }
 
 #endif // CAVERN_PROJECTION_HLSL

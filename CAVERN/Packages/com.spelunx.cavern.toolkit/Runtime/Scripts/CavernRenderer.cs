@@ -4,27 +4,21 @@ using UnityEditor.Rendering;
 using System.Collections.Generic;
 
 namespace Spelunx {
-    public enum StereoMode {
-        Off,
-        On,
-    }
-
     [RequireComponent(typeof(Camera))]
     public class CavernRenderer : MonoBehaviour {
+        public enum StereoMode { Off, On, }
+
         // Todo: Move these settings into a scriptable object.
-        [SerializeField] float ipd = 0.064f; // IPD in metres.
+        [SerializeField] float interpupillaryDistance = 0.064f; // IPD in metres.
         [SerializeField] private StereoMode stereoMode = StereoMode.Off;
-        [SerializeField] private Vector2Int screenResolution = new Vector2Int(5760, 1080);
         [SerializeField] private Shader shader;
 
         private Material material;
         [SerializeField] private RenderTexture cubemapMonoEye; // Mono
-        // private RenderTexture cubemapLeftEye; // Left Eye
-        // private RenderTexture cubemapRightEye; // Right Eye
-        // private RenderTexture equirectangularProjection; // Equirectangular Projection
-        [SerializeField] private RenderTexture textureWall;
+        [SerializeField] private RenderTexture cubemapLeftEye; // Left Eye
+        [SerializeField] private RenderTexture cubemapRightEye; // Right Eye
 
-        public float GetIPD() { return ipd; }
+        public float GetIPD() { return interpupillaryDistance; }
         public StereoMode GetStereoMode() { return stereoMode; }
 
         private void OnEnable() {
@@ -49,12 +43,15 @@ namespace Spelunx {
             // cubemapRightEye.dimension = TextureDimension.Cube;
             // cubemapRightEye.wrapMode = TextureWrapMode.Clamp;
 
-            // equirectangularProjection = new RenderTexture(screenResolution.x, screenResolution.y, 32, RenderTextureFormat.ARGB32);
+            // equirectangularProjection = new RenderTexture(4096, 4096, 32, RenderTextureFormat.ARGB32);
             // equirectangularProjection.dimension = TextureDimension.Tex2D;
             // equirectangularProjection.wrapMode = TextureWrapMode.Clamp;
 
             // Initialise material.
             material = new Material(shader);
+            material.SetTexture("_CubemapMonoEye", cubemapMonoEye);
+            material.SetTexture("_CubemapLeftEye", cubemapLeftEye);
+            material.SetTexture("_CubemapRightEye", cubemapRightEye);
         }
 
         private void Start() {
@@ -78,21 +75,18 @@ namespace Spelunx {
             switch (stereoMode) {
                 case StereoMode.Off:
                     camera.RenderToCubemap(cubemapMonoEye, faceMask, Camera.MonoOrStereoscopicEye.Mono);
-                    // cubemapMonoEye.ConvertToEquirect(equirectangularProjection, Camera.MonoOrStereoscopicEye.Mono);
                     break;
                 case StereoMode.On:
-                    camera.stereoSeparation = ipd;
-                    // camera.RenderToCubemap(cubemapLeftEye, faceMask, Camera.MonoOrStereoscopicEye.Left);
-                    // camera.RenderToCubemap(cubemapRightEye, faceMask, Camera.MonoOrStereoscopicEye.Right);
-                    // cubemapLeftEye.ConvertToEquirect(equirectangularProjection, Camera.MonoOrStereoscopicEye.Left);
-                    // cubemapRightEye.ConvertToEquirect(equirectangularProjection, Camera.MonoOrStereoscopicEye.Right);
+                    camera.stereoSeparation = interpupillaryDistance;
+                    camera.RenderToCubemap(cubemapLeftEye, faceMask, Camera.MonoOrStereoscopicEye.Left);
+                    camera.RenderToCubemap(cubemapRightEye, faceMask, Camera.MonoOrStereoscopicEye.Right);
                     break;
             }
         }
 
         private void OnEndContextRendering(ScriptableRenderContext context, List<Camera> cameras) {
-            // Graphics.Blit(cubemapMonoEye, textureWall, material);
-            Graphics.Blit(cubemapMonoEye, material);
+            material.SetInteger("_EnableStereo", stereoMode == StereoMode.On ? 1 : 0);
+            Graphics.Blit(null, material);
         }
     }
 }

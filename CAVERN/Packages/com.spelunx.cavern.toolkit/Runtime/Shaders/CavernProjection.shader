@@ -4,7 +4,10 @@ Shader "Spelunx/CavernProjection" {
     // List of property types: https://docs.unity3d.com/Manual/SL-Properties.html
     Properties {
         [Header(Projection Options)]
-        [MainTexture] _MainTex ("Equirectangular Projection", Cube) = "white" {}
+        _CubemapMonoEye ("Cubemap Mono Eye", Cube) = "" {}
+        _CubemapLeftEye ("Cubemap Left Eye", Cube) = "" {}
+        _CubemapRightEye ("Cubemap Right Eye", Cube) = "" {}
+        _EnableStereo ("Enable Stereo Rendering", Integer) = 0
     }
 
     SubShader {
