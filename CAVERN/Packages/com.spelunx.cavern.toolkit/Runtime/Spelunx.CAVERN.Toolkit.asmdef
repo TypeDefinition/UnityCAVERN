@@ -1,7 +1,10 @@
 {
     "name": "Spelunx.CAVERN.Toolkit",
     "rootNamespace": "",
-    "references": [],
+    "references": [
+        "Unity.RenderPipelines.Core.Runtime",
+        "Unity.RenderPipelines.Universal.Runtime"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
