@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['doxygenplaceholder_0',['DoxygenPlaceholder',['../de/d0e/classSpelunx_1_1DoxygenPlaceholder.html',1,'Spelunx']]]
+  ['cavernrenderer_0',['CavernRenderer',['../db/d6f/classSpelunx_1_1CavernRenderer.html',1,'Spelunx']]]
 ];
