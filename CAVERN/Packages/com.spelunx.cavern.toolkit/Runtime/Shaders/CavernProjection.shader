@@ -7,7 +7,14 @@ Shader "Spelunx/CavernProjection" {
         _CubemapMonoEye ("Cubemap Mono Eye", Cube) = "" {}
         _CubemapLeftEye ("Cubemap Left Eye", Cube) = "" {}
         _CubemapRightEye ("Cubemap Right Eye", Cube) = "" {}
+
         _EnableStereo ("Enable Stereo Rendering", Integer) = 0
+        _CavernHeight ("Cavern Height", Float) = 0
+        _CavernRadius ("Cavern Radius", Float) = 0
+        _CavernAngle ("Cavern Angle (Degrees)", Float) = 0
+
+        // Temp
+        _RotationY ("Rotation Y", Float) = 0
     }
 
     SubShader {
