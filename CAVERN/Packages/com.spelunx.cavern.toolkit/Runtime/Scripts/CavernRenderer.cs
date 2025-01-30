@@ -105,7 +105,7 @@ namespace Spelunx {
             material.SetFloat("_CavernHeight", cavernHeight);
             material.SetFloat("_CavernRadius", cavernRadius);
             material.SetFloat("_CavernAngle", cavernAngle);
-            material.SetFloat("_RotationY", transform.rotation.eulerAngles.y);
+            material.SetMatrix("_CameraRotation", Matrix4x4.Rotate(transform.rotation));
             Graphics.Blit(null, material);
         }
     }

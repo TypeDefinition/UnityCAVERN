@@ -22,14 +22,10 @@ float4 _CubemapRightEye_ST;
 
 // Other Material Properties
 int _EnableStereo;
-
 float _CavernHeight;
 float _CavernRadius;
 float _CavernAngle;
-
-float4 _CameraRight;
-float4 _CameraFront;
-float4 _CameraUp;
+float4x4 _CameraRotation;
 
 // This attributes struct receives data about the mesh we are currently rendering.
 // Data is automatically placed in the fields according to their semantic.
@@ -81,7 +77,8 @@ float4 Fragment(Vert2Frag input) : SV_TARGET {
     // Convert the UV from the [0, 1] range to the [-1, 1] range.
     uv2d = uv2d * 2.0 - float2(1.0, 1.0);
     float horizontalAngle = radians(uv2d.x * _CavernAngle * 0.5f);
-    float3 uvCube = float3(_CavernRadius * sin(horizontalAngle), _CavernHeight * 0.5f * uv2d.y, _CavernRadius * cos(horizontalAngle));
+    float3 eyeToScreen = normalize(float3(_CavernRadius * sin(horizontalAngle), _CavernHeight * 0.5f * uv2d.y, _CavernRadius * cos(horizontalAngle)));
+    float3 uvCube = mul(_CameraRotation, float4(eyeToScreen.x, eyeToScreen.y, eyeToScreen.z, 0.0)).xyz;
 
     if (_EnableStereo) {
         return isTop ? SAMPLE_TEXTURECUBE(_CubemapLeftEye, sampler_CubemapLeftEye, uvCube) : SAMPLE_TEXTURECUBE(_CubemapRightEye, sampler_CubemapRightEye, uvCube);
