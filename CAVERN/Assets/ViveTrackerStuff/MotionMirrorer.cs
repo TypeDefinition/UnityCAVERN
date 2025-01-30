@@ -18,7 +18,7 @@ public class MotionMirrorer : MonoBehaviour
     void Update()
     {
         // Copy motion
-        transform.position = sourceOrigin - source.position + origin;
+        transform.position = source.position - sourceOrigin + origin;
         transform.localRotation = source.localRotation;
     }
 }
