@@ -22,11 +22,14 @@ float4 _CubemapRightEye_ST;
 
 // Other Material Properties
 int _EnableStereo;
+
 float _CavernHeight;
 float _CavernRadius;
 float _CavernAngle;
 
-float _RotationY;
+float4 _CameraRight;
+float4 _CameraFront;
+float4 _CameraUp;
 
 // This attributes struct receives data about the mesh we are currently rendering.
 // Data is automatically placed in the fields according to their semantic.
@@ -57,43 +60,33 @@ Vert2Frag Vertex(Attributes input) {
     return output;
 }
 
-float4 SampleMonoEye(float2 uv) {
-    // Convert the UV from the [0, 1] range to the [-1, 1] range.
-    uv = uv * 2.0 - float2(1.0, 1.0);
-    float horizontalAngle = radians(uv.x * _CavernAngle * 0.5f + _RotationY);
-    float3 cubeUV = float3(_CavernRadius * sin(horizontalAngle), _CavernHeight * 0.5f * uv.y, _CavernRadius * cos(horizontalAngle));
-    return SAMPLE_TEXTURECUBE(_CubemapMonoEye, sampler_CubemapMonoEye, cubeUV);
-}
-
-float4 SampleLeftEye(float2 uv) {
-    // Convert the UV's y component from the [0.5, 1] range to the [0, 1] range.
-    uv.y = (uv.y - 0.5) * 2.0;
-    // Convert the UV from the [0, 1] range to the [-1, 1] range.
-    uv = uv * 2.0 - float2(1.0, 1.0);
-    float horizontalAngle = radians(uv.x * _CavernAngle * 0.5f + _RotationY);
-    float3 cubeUV = float3(_CavernRadius * sin(horizontalAngle), _CavernHeight * 0.5f * uv.y, _CavernRadius * cos(horizontalAngle));
-    return SAMPLE_TEXTURECUBE(_CubemapLeftEye, sampler_CubemapLeftEye, cubeUV);
-}
-
-float4 SampleRightEye(float2 uv) {
-    // Convert the UV's y component from the [0, 0.5] range to the [0, 1] range.
-    uv.y *= 2.0;
-    // Convert the UV from the [0, 1] range to the [-1, 1] range.
-    uv = uv * 2.0 - float2(1.0, 1.0);
-    float horizontalAngle = radians(uv.x * _CavernAngle * 0.5f + _RotationY);
-    float3 cubeUV = float3(_CavernRadius * sin(horizontalAngle), _CavernHeight * 0.5f * uv.y, _CavernRadius * cos(horizontalAngle));
-    return SAMPLE_TEXTURECUBE(_CubemapRightEye, sampler_CubemapRightEye, cubeUV);
-}
-
 // The fragment function, runs once per pixel on the screen.
 // It must have a float4 return type and have the SV_TARGET semantic.
 // Values in the Vert2Frag have been interpolated based on each pixel's position.
 float4 Fragment(Vert2Frag input) : SV_TARGET {
-    if (_EnableStereo) {
-        // Split the screen into 2 halves. The top will render the left eye, the bottom will render the right eye.
-        return 0.5 < input.uv.y ? SampleLeftEye(input.uv) : SampleRightEye(input.uv);
+    // Split the screen into 2 halves, top and bottom.
+    // For stereoscopic rendering, the top will render the left eye, the bottom will render the right eye.
+    // For monoscopic rendering, both halves will render the same thing.
+    bool isTop = 0.5 < input.uv.y;
+    float2 uv2d = input.uv;
+    // For the left eye, convert the UV's y component from the [0.5, 1] range to the [0, 1] range.
+    if (isTop) {
+        uv2d.y = (uv2d.y - 0.5) * 2.0;
     }
-    return SampleMonoEye(input.uv);
+    // For the right eye, convert the UV's y component from the [0, 0.5] range to the [0, 1] range.
+    else {
+        uv2d.y *= 2.0;
+    }
+
+    // Convert the UV from the [0, 1] range to the [-1, 1] range.
+    uv2d = uv2d * 2.0 - float2(1.0, 1.0);
+    float horizontalAngle = radians(uv2d.x * _CavernAngle * 0.5f);
+    float3 uvCube = float3(_CavernRadius * sin(horizontalAngle), _CavernHeight * 0.5f * uv2d.y, _CavernRadius * cos(horizontalAngle));
+
+    if (_EnableStereo) {
+        return isTop ? SAMPLE_TEXTURECUBE(_CubemapLeftEye, sampler_CubemapLeftEye, uvCube) : SAMPLE_TEXTURECUBE(_CubemapRightEye, sampler_CubemapRightEye, uvCube);
+    }
+    return SAMPLE_TEXTURECUBE(_CubemapMonoEye, sampler_CubemapMonoEye, uvCube);
 }
 
 #endif // CAVERN_PROJECTION_HLSL

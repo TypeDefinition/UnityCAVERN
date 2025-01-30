@@ -4,17 +4,19 @@ Shader "Spelunx/CavernProjection" {
     // List of property types: https://docs.unity3d.com/Manual/SL-Properties.html
     Properties {
         [Header(Projection Options)]
-        _CubemapMonoEye ("Cubemap Mono Eye", Cube) = "" {}
+        [MainTexture] _CubemapMonoEye ("Cubemap Mono Eye", Cube) = "" {}
         _CubemapLeftEye ("Cubemap Left Eye", Cube) = "" {}
         _CubemapRightEye ("Cubemap Right Eye", Cube) = "" {}
 
         _EnableStereo ("Enable Stereo Rendering", Integer) = 0
+        
         _CavernHeight ("Cavern Height", Float) = 0
         _CavernRadius ("Cavern Radius", Float) = 0
         _CavernAngle ("Cavern Angle (Degrees)", Float) = 0
 
-        // Temp
-        _RotationY ("Rotation Y", Float) = 0
+        _CameraRight ("Camera Right Vector", Vector) = (1, 0, 0, 0) // X-Axis
+        _CameraFront ("Camera Front Vector", Vector) = (0, 0, 1, 0) // Z-Axis
+        _CameraUp ("Camera Up Vector", Vector) = (0, 1, 0, 0) // Y-Axis
     }
 
     SubShader {
