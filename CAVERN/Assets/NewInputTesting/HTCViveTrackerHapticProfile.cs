@@ -52,6 +52,17 @@ namespace UnityEngine.XR.OpenXR.Features.Interactions
 
         private const string kDeviceLocalizedName = "HTC Vive Tracker OpenXR";
 
+        protected override OpenXRInteractionFeature.InteractionProfileType GetInteractionProfileType()
+        {
+            return OpenXRInteractionFeature.InteractionProfileType.XRController;
+        }
+
+
+        protected override string GetDeviceLayoutName()
+        {
+            return kDeviceLocalizedName;
+        }
+
         /// <summary>
         /// OpenXR user path definitions for the tracker.
         /// </summary>
