@@ -1,12 +1,38 @@
 using UnityEngine;
 using UnityEngine.Rendering;
-using UnityEditor.Rendering;
 using System.Collections.Generic;
-using UnityEditor;
+using UnityEngine.Rendering.Universal;
+using UnityEngine.Rendering.RenderGraphModule.Util;
+using UnityEngine.Rendering.RenderGraphModule;
 
 namespace Spelunx {
     [RequireComponent(typeof(Camera))]
     public class CavernRenderer : MonoBehaviour {
+        class ProjectionPass : ScriptableRenderPass {
+            private Material material;
+
+            public ProjectionPass(Material material) {
+                this.material = material;
+            }
+
+            public override void RecordRenderGraph(RenderGraph renderGraph, ContextContainer frameData) {
+                if (material == null) { return; }
+
+                UniversalResourceData resourceData = frameData.Get<UniversalResourceData>();
+                UniversalCameraData cameraData = frameData.Get<UniversalCameraData>();
+                if (resourceData.isActiveTargetBackBuffer) { return; } // The following line ensures that the render pass doesn't blit from the back buffer.
+
+                TextureHandle target = resourceData.activeColorTexture;
+
+                // This check is to avoid an error from the material preview in the scene.
+                if (!target.IsValid()) return;
+
+                TextureHandle emptySource = UniversalRenderer.CreateRenderGraphTexture(renderGraph, new RenderTextureDescriptor(32, 32, RenderTextureFormat.Default, 0), "Empty Source Texture", false);
+                RenderGraphUtils.BlitMaterialParameters blitParams = new RenderGraphUtils.BlitMaterialParameters(emptySource, target, material, 0);
+                renderGraph.AddBlitPass(blitParams, "Cavern Projection Pass");
+            }
+        }
+
         public enum StereoMode { Off, On, }
         public enum EyeResolution {
             Low = 1024,
@@ -31,16 +57,23 @@ namespace Spelunx {
         private RenderTexture cubemapLeftEye; // Left Eye
         private RenderTexture cubemapRightEye; // Right Eye
         private Material material;
+        private ProjectionPass projectionPass; // This does not work.
 
         public float GetIPD() { return interpupillaryDistance; }
         public StereoMode GetStereoMode() { return stereoMode; }
 
         private void OnEnable() {
+            RenderPipelineManager.beginContextRendering += OnBeginContextRendering;
             RenderPipelineManager.endContextRendering += OnEndContextRendering;
+            RenderPipelineManager.beginCameraRendering += OnBeginCameraRendering;
+            RenderPipelineManager.endCameraRendering += OnEndCameraRendering;
         }
 
         private void OnDisable() {
+            RenderPipelineManager.beginContextRendering -= OnBeginContextRendering;
             RenderPipelineManager.endContextRendering -= OnEndContextRendering;
+            RenderPipelineManager.beginCameraRendering -= OnBeginCameraRendering;
+            RenderPipelineManager.endCameraRendering -= OnEndCameraRendering;
         }
 
         private void Awake() {
@@ -62,6 +95,10 @@ namespace Spelunx {
             material.SetTexture("_CubemapMonoEye", cubemapMonoEye);
             material.SetTexture("_CubemapLeftEye", cubemapLeftEye);
             material.SetTexture("_CubemapRightEye", cubemapRightEye);
+
+            // Initialise projection pass.
+            projectionPass = new ProjectionPass(material);
+            projectionPass.renderPassEvent = RenderPassEvent.AfterRendering;
         }
 
         private void Start() {
@@ -98,15 +135,31 @@ namespace Spelunx {
                     rightEye.RenderToCubemap(cubemapRightEye, faceMask, Camera.MonoOrStereoscopicEye.Mono);
                     break;
             }
-        }
 
-        private void OnEndContextRendering(ScriptableRenderContext context, List<Camera> cameras) {
             material.SetInteger("_EnableStereo", stereoMode == StereoMode.On ? 1 : 0);
             material.SetFloat("_CavernHeight", cavernHeight);
             material.SetFloat("_CavernRadius", cavernRadius);
             material.SetFloat("_CavernAngle", cavernAngle);
             material.SetMatrix("_CameraRotation", Matrix4x4.Rotate(transform.rotation));
-            Graphics.Blit(null, material);
+        }
+
+        private void OnBeginContextRendering(ScriptableRenderContext context, List<Camera> cameras) {
+        }
+
+        private void OnEndContextRendering(ScriptableRenderContext context, List<Camera> cameras) {
+        }
+
+        private void OnBeginCameraRendering(ScriptableRenderContext context, Camera camera) {
+            if (camera == GetComponent<Camera>()) {
+                // UniversalRenderPipelineAsset urpAsset = (UniversalRenderPipelineAsset)GraphicsSettings.currentRenderPipeline;
+                // urpAsset.scriptableRenderer.EnqueuePass(projectionPass);
+            }
+        }
+
+        private void OnEndCameraRendering(ScriptableRenderContext context, Camera camera) {
+            if (camera == GetComponent<Camera>()) {
+                Graphics.Blit(null, material);
+            }
         }
     }
 }

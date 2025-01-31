@@ -361,6 +361,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cavern Camera
       objectReference: {fileID: 0}
+    - target: {fileID: 7529233584062318094, guid: e3759be80fec5b741b428c3d70192a50, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8495539629446166763, guid: e3759be80fec5b741b428c3d70192a50, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
