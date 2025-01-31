@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['off_0',['Off',['../db/d6f/classSpelunx_1_1CavernRenderer.html#a21613ea24c8be2f0e20a526937072df1ad15305d7a4e34e02489c74a5ef542f36',1,'Spelunx::CavernRenderer']]],
-  ['on_1',['On',['../db/d6f/classSpelunx_1_1CavernRenderer.html#a21613ea24c8be2f0e20a526937072df1a521c36a31c2762741cf0f8890cbe05e3',1,'Spelunx::CavernRenderer']]]
+  ['mid_0',['Mid',['../db/d6f/classSpelunx_1_1CavernRenderer.html#a622d9665594741233bb0fff8de365d68a55c6b09cbca39ef0cdb728eb112a5049',1,'Spelunx::CavernRenderer']]]
 ];
