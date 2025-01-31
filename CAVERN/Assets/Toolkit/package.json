@@ -1,0 +1,12 @@
+{
+    "name": "com.Spelunx.CAVERN",
+    "version": "1.0.0",
+    "displayName": "Tools for CAVERN development",
+    "description": "Test package",
+    "unity": "6000.0",
+    "documentationUrl": "https://api.spelunx.net/",
+    "author": {
+        "name": "Spelunx",
+        "email": "etc-spelunx@lists.andrew.cmu.edu"
+    }
+}
