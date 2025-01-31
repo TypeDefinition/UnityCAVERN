@@ -4,48 +4,43 @@ using UnityEngine.Rendering.Universal;
 using UnityEngine.Rendering.RenderGraphModule;
 using UnityEngine.Rendering.RenderGraphModule.Util;
 
-/*public class CavernProjectionRendererFeature : ScriptableRendererFeature {
-    public class BlitPass : ScriptableRenderPass {
-        public Material blitMaterial;
-        public RenderTexture sourceTexture;
+public class CavernProjectionRendererFeature : ScriptableRendererFeature {
+    class ProjectionPass : ScriptableRenderPass {
+        private Material material;
+
+        public ProjectionPass(Material material) {
+            this.material = material;
+        }
 
         public override void RecordRenderGraph(RenderGraph renderGraph, ContextContainer frameData) {
-            var resourceData = frameData.Get<UniversalResourceData>();
+            if (material == null) { return; }
 
-            // Source
-            RTHandle sourceTexRTHandle = RTHandles.Alloc(sourceTexture, false);
-            TextureHandle sourceTexHandle = renderGraph.ImportTexture(sourceTexRTHandle);
+            UniversalResourceData resourceData = frameData.Get<UniversalResourceData>();
+            UniversalCameraData cameraData = frameData.Get<UniversalCameraData>();
+            if (resourceData.isActiveTargetBackBuffer) { return; } // The following line ensures that the render pass doesn't blit from the back buffer.
 
-            // Target
-            var targetDesc = renderGraph.GetTextureDesc(resourceData.activeColorTexture);
-            targetDesc.name = $"CameraColor-{passName}";
-            targetDesc.clearBuffer = false;
-            TextureHandle targetTexHandle = renderGraph.CreateTexture(targetDesc);
+            TextureHandle target = resourceData.activeColorTexture;
 
-            // Blit
-            RenderGraphUtils.BlitMaterialParameters para = new(sourceTexHandle, targetTexHandle, blitMaterial, 0);
-            renderGraph.AddBlitPass(para, passName: "Blit Pass");
+            // This check is to avoid an error from the material preview in the scene.
+            if (!target.IsValid()) return;
 
-            // Copy to screen.
-            resourceData.cameraColor = targetTexHandle;
+            TextureHandle emptySource = UniversalRenderer.CreateRenderGraphTexture(renderGraph, new RenderTextureDescriptor(32, 32, RenderTextureFormat.Default, 0), "Empty Source Texture", false);
+            RenderGraphUtils.BlitMaterialParameters blitParams = new RenderGraphUtils.BlitMaterialParameters(emptySource, target, material, 0);
+            renderGraph.AddBlitPass(blitParams, "Cavern Blit Pass");
         }
     }
 
-    [SerializeField] private Material blitMaterial;
-    [SerializeField] private RenderTexture sourceTexture;
-
-    private BlitPass blitPass;
+    [SerializeField] private Material material;
+    private ProjectionPass scriptablePass;
 
     public override void Create() {
-        blitPass = new BlitPass();
-        blitPass.renderPassEvent = RenderPassEvent.AfterRendering;
+        scriptablePass = new ProjectionPass(material);
+        scriptablePass.renderPassEvent = RenderPassEvent.AfterRendering;
     }
-
-    // Here you can inject one or multiple render passes in the renderer.
-    // This method is called when setting up the renderer once per-camera.
+    
     public override void AddRenderPasses(ScriptableRenderer renderer, ref RenderingData renderingData) {
-        blitPass.blitMaterial = blitMaterial;
-        blitPass.sourceTexture = sourceTexture;
-        renderer.EnqueuePass(blitPass);
+        if (renderingData.cameraData.cameraType == CameraType.Game) {
+            renderer.EnqueuePass(scriptablePass);
+        }
     }
-}*/
+}

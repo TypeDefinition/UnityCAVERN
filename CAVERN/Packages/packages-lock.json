@@ -1,21 +1,5 @@
 {
   "dependencies": {
-    "com.etc.cavecavern": {
-      "version": "0.0.31-preview",
-      "depth": 0,
-      "source": "registry",
-      "dependencies": {
-        "com.etc.kt.core": "0.3.7-preview"
-      },
-      "url": "https://upm.etc.cmu.edu"
-    },
-    "com.etc.kt.core": {
-      "version": "0.3.7-preview",
-      "depth": 1,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://upm.etc.cmu.edu"
-    },
     "com.spelunx.cavern.toolkit": {
       "version": "file:com.spelunx.cavern.toolkit",
       "depth": 0,
