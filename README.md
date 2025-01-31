@@ -1,3 +1,3 @@
 # Spelunx CAVERN Toolkit
 
-API Documentation: https://api.spelunx.net/
+API Documentation: https://spelunx.github.io/UnityCAVERN/
