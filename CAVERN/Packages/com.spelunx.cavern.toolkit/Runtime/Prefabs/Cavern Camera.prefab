@@ -322,6 +322,7 @@ MonoBehaviour:
   shader: {fileID: 4800000, guid: d250a68325f512d4082683a9f6882f49, type: 3}
   leftEye: {fileID: 2557516610741733000}
   rightEye: {fileID: 5707833173163971691}
+  material: {fileID: 2100000, guid: ae07743eabe05194eb2e0335be88890a, type: 2}
 --- !u!20 &7529233584062318094
 Camera:
   m_ObjectHideFlags: 0
