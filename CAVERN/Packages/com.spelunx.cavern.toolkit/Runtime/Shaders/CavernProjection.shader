@@ -4,10 +4,11 @@ Shader "Spelunx/CavernProjection" {
     // List of property types: https://docs.unity3d.com/Manual/SL-Properties.html
     Properties {
         [Header(Projection Options)]
-        [MainTexture] _MainTex ("Main Texture (Unused)", 2D) = "white" {}
-        _CubemapMonoEye ("Cubemap Mono Eye", Cube) = "" {}
-        _CubemapLeftEye ("Cubemap Left Eye", Cube) = "" {}
-        _CubemapRightEye ("Cubemap Right Eye", Cube) = "" {}
+        _CubemapMono ("Cubemap Mono", Cube) = "" {}
+        _CubemapLeft ("Cubemap Left", Cube) = "" {}
+        _CubemapRight ("Cubemap Right", Cube) = "" {}
+        _CubemapFront ("Cubemap Front", Cube) = "" {}
+        _CubemapBack ("Cubemap Back", Cube) = "" {}
     }
 
     SubShader {
