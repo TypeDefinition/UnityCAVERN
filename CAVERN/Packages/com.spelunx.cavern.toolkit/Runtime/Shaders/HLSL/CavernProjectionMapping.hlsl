@@ -8,24 +8,32 @@
 #include "Packages/com.unity.render-pipelines.universal/ShaderLibrary/Lighting.hlsl"
 
 // Textures
-TEXTURECUBE(_CubemapMonoEye);
-SAMPLER(sampler_CubemapMonoEye);
-float4 _CubemapMonoEye_ST;
+TEXTURECUBE(_CubemapMono);
+SAMPLER(sampler_CubemapMono);
+float4 _CubemapMono_ST;
 
-TEXTURECUBE(_CubemapLeftEye);
-SAMPLER(sampler_CubemapLeftEye);
-float4 _CubemapLeftEye_ST;
+TEXTURECUBE(_CubemapLeft);
+SAMPLER(sampler_CubemapLeft);
+float4 _CubemapLeft_ST;
 
-TEXTURECUBE(_CubemapRightEye);
-SAMPLER(sampler_CubemapRightEye);
-float4 _CubemapRightEye_ST;
+TEXTURECUBE(_CubemapRight);
+SAMPLER(sampler_CubemapRight);
+float4 _CubemapRight_ST;
+
+TEXTURECUBE(_CubemapFront);
+SAMPLER(sampler_CubemapFront);
+float4 _CubemapFront_ST;
+
+TEXTURECUBE(_CubemapBack);
+SAMPLER(sampler_CubemapBack);
+float4 _CubemapBack_ST;
 
 // Other Material Properties
 int _EnableStereo;
 float _CavernHeight;
 float _CavernRadius;
 float _CavernAngle;
-float4x4 _CameraRotation;
+float _CavernElevation;
 
 // This attributes struct receives data about the mesh we are currently rendering.
 // Data is automatically placed in the fields according to their semantic.
@@ -63,10 +71,10 @@ float4 Fragment(Vert2Frag input) : SV_TARGET {
     // Split the screen into 2 halves, top and bottom.
     // For stereoscopic rendering, the top will render the left eye, the bottom will render the right eye.
     // For monoscopic rendering, both halves will render the same thing.
-    bool isTop = 0.5 < input.uv.y;
+    bool isLeftEye = 0.5 < input.uv.y;
     float2 uv2d = input.uv;
     // For the left eye, convert the UV's y component from the [0.5, 1] range to the [0, 1] range.
-    if (isTop) {
+    if (isLeftEye) {
         uv2d.y = (uv2d.y - 0.5) * 2.0;
     }
     // For the right eye, convert the UV's y component from the [0, 0.5] range to the [0, 1] range.
@@ -76,14 +84,40 @@ float4 Fragment(Vert2Frag input) : SV_TARGET {
 
     // Convert the UV from the [0, 1] range to the [-1, 1] range.
     uv2d = uv2d * 2.0 - float2(1.0, 1.0);
-    float horizontalAngle = radians(uv2d.x * _CavernAngle * 0.5f);
-    float3 eyeToScreen = normalize(float3(_CavernRadius * sin(horizontalAngle), _CavernHeight * 0.5f * uv2d.y, _CavernRadius * cos(horizontalAngle)));
-    float3 uvCube = mul(_CameraRotation, float4(eyeToScreen.x, eyeToScreen.y, eyeToScreen.z, 0.0)).xyz;
+    float screenAngle = uv2d.x * _CavernAngle * 0.5f; // Horizontal Screen Angle (Degrees)
+    float screenAngleRad = radians(screenAngle);
+    float3 uvCube = normalize(float3(_CavernRadius * sin(screenAngleRad), _CavernHeight * 0.5f * uv2d.y + _CavernElevation, _CavernRadius * cos(screenAngleRad)));
 
-    if (_EnableStereo) {
-        return isTop ? SAMPLE_TEXTURECUBE(_CubemapLeftEye, sampler_CubemapLeftEye, uvCube) : SAMPLE_TEXTURECUBE(_CubemapRightEye, sampler_CubemapRightEye, uvCube);
+    // Monoscopic
+    if (!_EnableStereo) {
+        return SAMPLE_TEXTURECUBE(_CubemapMono, sampler_CubemapMono, uvCube);
     }
-    return SAMPLE_TEXTURECUBE(_CubemapMonoEye, sampler_CubemapMonoEye, uvCube);
+    
+    // Left Eye
+    if (isLeftEye) {
+        // Physical screen left quadrant.
+        if (screenAngle < -45.0f) {
+            return SAMPLE_TEXTURECUBE(_CubemapBack, sampler_CubemapBack, uvCube);
+        }
+        // Physical screen right quadrant.
+        if (screenAngle > 45.0f) {
+            return SAMPLE_TEXTURECUBE(_CubemapFront, sampler_CubemapFront, uvCube);
+        }
+        // Physical screen front quadrant.
+        return SAMPLE_TEXTURECUBE(_CubemapLeft, sampler_CubemapLeft, uvCube);
+    }
+    
+    // Right Eye
+    // Physical screen left quadrant.
+    if (screenAngle < -45.0f) {
+        return SAMPLE_TEXTURECUBE(_CubemapFront, sampler_CubemapFront, uvCube);
+    }
+    // Physical screen right quadrant.
+    if (screenAngle > 45.0f) {
+        return SAMPLE_TEXTURECUBE(_CubemapBack, sampler_CubemapBack, uvCube);
+    }
+    // Physical screen front quadrant.
+    return SAMPLE_TEXTURECUBE(_CubemapRight, sampler_CubemapRight, uvCube);
 }
 
 #endif // CAVERN_PROJECTION_HLSL
