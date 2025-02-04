@@ -6,6 +6,6 @@ public class MoveWith : MonoBehaviour
 
     void Update()
     {
-        transform.SetPositionAndRotation(targetToCopy.position, targetToCopy.rotation);
+        transform.position = targetToCopy.position;
     }
 }
