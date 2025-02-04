@@ -1,14 +1,13 @@
 {
   "dependencies": {
     "com.biosmanager.unity-openvr-tracking": {
-      "version": "https://github.com/biosmanager/unity-openvr-tracking.git",
+      "version": "file:unity-openvr-tracking",
       "depth": 0,
-      "source": "git",
+      "source": "embedded",
       "dependencies": {
         "com.valvesoftware.unity.openvr": "1.1.4",
         "com.unity.nuget.newtonsoft-json": "3.0.2"
-      },
-      "hash": "4ebca3f9823b6c6c806657481c41a08b599c81ed"
+      }
     },
     "com.spelunx.cavern.toolkit": {
       "version": "file:com.spelunx.cavern.toolkit",

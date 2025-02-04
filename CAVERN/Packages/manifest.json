@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "com.biosmanager.unity-openvr-tracking": "https://github.com/biosmanager/unity-openvr-tracking.git",
     "com.unity.ai.navigation": "2.0.5",
     "com.unity.collab-proxy": "2.6.0",
     "com.unity.ide.rider": "3.0.34",
