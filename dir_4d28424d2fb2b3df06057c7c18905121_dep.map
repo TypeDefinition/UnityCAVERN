@@ -1,7 +1,14 @@
 <map id="CAVERN/Packages" name="CAVERN/Packages">
-<area shape="rect" id="node4" href="dir_f005a58be210bc980e3354d059bef4df.html" title="Scripts" alt="" coords="365,84,432,109"/>
-<area shape="rect" id="clust4" href="dir_4c42a0c47993346d7f7279888727bc96.html" alt="" coords="355,73,544,120"/>
-<area shape="rect" id="clust3" href="dir_ce555d3fa6e6a2ae48a70f82522534de.html" alt="" coords="133,63,555,131"/>
-<area shape="rect" id="clust2" href="dir_4d28424d2fb2b3df06057c7c18905121.html" alt="" coords="27,52,565,141"/>
-<area shape="rect" id="clust1" href="dir_c9a1103a3fbf6e9cb6487051405e3738.html" title="CAVERN" alt="" coords="16,16,576,152"/>
+<area shape="rect" id="node5" href="dir_b01c7c08624eea0c9bd231fe16c209a7.html" title="Interactions" alt="" coords="1132,105,1231,131"/>
+<area shape="rect" id="node9" href="dir_aeec656b85632d0434e5ed5660c510f2.html" title="Displays" alt="" coords="814,105,893,131"/>
+<area shape="rect" id="node10" href="dir_38d1fc85555fc2a8b96c95bc0f235baa.html" title="Linux" alt="" coords="733,105,790,131"/>
+<area shape="rect" id="node11" href="dir_960641dacee25b72270efa7eea870732.html" title="Windows" alt="" coords="627,105,709,131"/>
+<area shape="rect" id="clust5" href="dir_f005a58be210bc980e3354d059bef4df.html" alt="" coords="1121,95,1332,141"/>
+<area shape="rect" id="clust4" href="dir_4c42a0c47993346d7f7279888727bc96.html" alt="" coords="1020,84,1343,152"/>
+<area shape="rect" id="clust8" href="dir_47db7b9a2fbdbea977728a02f45aab3c.html" alt="" coords="616,95,988,141"/>
+<area shape="rect" id="clust7" href="dir_fb12253613fa510bce92d589125feebc.html" alt="" coords="469,84,999,152"/>
+<area shape="rect" id="clust6" href="dir_7d962b7fd76dd8d45d25cec537f60dd9.html" alt="" coords="355,73,1009,163"/>
+<area shape="rect" id="clust3" href="dir_ce555d3fa6e6a2ae48a70f82522534de.html" alt="" coords="133,63,1353,173"/>
+<area shape="rect" id="clust2" href="dir_4d28424d2fb2b3df06057c7c18905121.html" alt="" coords="27,52,1364,184"/>
+<area shape="rect" id="clust1" href="dir_c9a1103a3fbf6e9cb6487051405e3738.html" title="CAVERN" alt="" coords="16,16,1375,195"/>
 </map>

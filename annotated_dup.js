@@ -1,6 +1,60 @@
 var annotated_dup =
 [
+    [ "FullscreenEditor", "dc/df1/namespaceFullscreenEditor.html", [
+      [ "Linux", "de/d3c/namespaceFullscreenEditor_1_1Linux.html", [
+        [ "NativeFullscreenHooks", "da/d86/classFullscreenEditor_1_1Linux_1_1NativeFullscreenHooks.html", null ],
+        [ "wmctrl", "d1/d00/classFullscreenEditor_1_1Linux_1_1wmctrl.html", "d1/d00/classFullscreenEditor_1_1Linux_1_1wmctrl" ]
+      ] ],
+      [ "Windows", "d6/ddb/namespaceFullscreenEditor_1_1Windows.html", [
+        [ "DevMode", "d0/d09/structFullscreenEditor_1_1Windows_1_1DevMode.html", "d0/d09/structFullscreenEditor_1_1Windows_1_1DevMode" ],
+        [ "DisplayDevice", "d5/df2/structFullscreenEditor_1_1Windows_1_1DisplayDevice.html", "d5/df2/structFullscreenEditor_1_1Windows_1_1DisplayDevice" ],
+        [ "GDI32", "d3/d0b/classFullscreenEditor_1_1Windows_1_1GDI32.html", "d3/d0b/classFullscreenEditor_1_1Windows_1_1GDI32" ],
+        [ "MonitorInfoEx", "d7/d30/structFullscreenEditor_1_1Windows_1_1MonitorInfoEx.html", "d7/d30/structFullscreenEditor_1_1Windows_1_1MonitorInfoEx" ],
+        [ "NativeRect", "d1/d4d/structFullscreenEditor_1_1Windows_1_1NativeRect.html", "d1/d4d/structFullscreenEditor_1_1Windows_1_1NativeRect" ],
+        [ "ShCore", "dc/d9a/classFullscreenEditor_1_1Windows_1_1ShCore.html", "dc/d9a/classFullscreenEditor_1_1Windows_1_1ShCore" ],
+        [ "User32", "df/d81/classFullscreenEditor_1_1Windows_1_1User32.html", "df/d81/classFullscreenEditor_1_1Windows_1_1User32" ]
+      ] ],
+      [ "After", "dc/d89/classFullscreenEditor_1_1After.html", "dc/d89/classFullscreenEditor_1_1After" ],
+      [ "Cmd", "dc/d4b/classFullscreenEditor_1_1Cmd.html", "dc/d4b/classFullscreenEditor_1_1Cmd" ],
+      [ "DisableSceneView", "dc/dfc/classFullscreenEditor_1_1DisableSceneView.html", "dc/dfc/classFullscreenEditor_1_1DisableSceneView" ],
+      [ "DisplayInfo", "d5/dfa/classFullscreenEditor_1_1DisplayInfo.html", "d5/dfa/classFullscreenEditor_1_1DisplayInfo" ],
+      [ "DynamicMenuItemAttribute", "da/ddd/classFullscreenEditor_1_1DynamicMenuItemAttribute.html", "da/ddd/classFullscreenEditor_1_1DynamicMenuItemAttribute" ],
+      [ "FixGameViewMouseInput", "d2/d80/classFullscreenEditor_1_1FixGameViewMouseInput.html", "d2/d80/classFullscreenEditor_1_1FixGameViewMouseInput" ],
+      [ "Fullscreen", "d3/dd5/classFullscreenEditor_1_1Fullscreen.html", "d3/dd5/classFullscreenEditor_1_1Fullscreen" ],
+      [ "FullscreenCallbacks", "d4/d75/classFullscreenEditor_1_1FullscreenCallbacks.html", "d4/d75/classFullscreenEditor_1_1FullscreenCallbacks" ],
+      [ "FullscreenContainer", "da/dd0/classFullscreenEditor_1_1FullscreenContainer.html", "da/dd0/classFullscreenEditor_1_1FullscreenContainer" ],
+      [ "FullscreenOnPlay", "d9/d40/classFullscreenEditor_1_1FullscreenOnPlay.html", "d9/d40/classFullscreenEditor_1_1FullscreenOnPlay" ],
+      [ "FullscreenPreferences", "d8/d78/classFullscreenEditor_1_1FullscreenPreferences.html", "d8/d78/classFullscreenEditor_1_1FullscreenPreferences" ],
+      [ "FullscreenRects", "dc/dd6/classFullscreenEditor_1_1FullscreenRects.html", "dc/dd6/classFullscreenEditor_1_1FullscreenRects" ],
+      [ "FullscreenUtility", "dd/d19/classFullscreenEditor_1_1FullscreenUtility.html", "dd/d19/classFullscreenEditor_1_1FullscreenUtility" ],
+      [ "FullscreenView", "db/ddb/classFullscreenEditor_1_1FullscreenView.html", "db/ddb/classFullscreenEditor_1_1FullscreenView" ],
+      [ "FullscreenWindow", "db/df0/classFullscreenEditor_1_1FullscreenWindow.html", "db/df0/classFullscreenEditor_1_1FullscreenWindow" ],
+      [ "GameViewLowResolutionAspectRatios", "d1/d34/classFullscreenEditor_1_1GameViewLowResolutionAspectRatios.html", null ],
+      [ "GameViewVSync", "d9/db6/classFullscreenEditor_1_1GameViewVSync.html", null ],
+      [ "GlobalToolbarHiding", "d5/d1e/classFullscreenEditor_1_1GlobalToolbarHiding.html", "d5/d1e/classFullscreenEditor_1_1GlobalToolbarHiding" ],
+      [ "GUIBackgroundColor", "d3/dfd/structFullscreenEditor_1_1GUIBackgroundColor.html", "d3/dfd/structFullscreenEditor_1_1GUIBackgroundColor" ],
+      [ "GUIColor", "d6/d1d/structFullscreenEditor_1_1GUIColor.html", "d6/d1d/structFullscreenEditor_1_1GUIColor" ],
+      [ "GUIContentColor", "d0/d88/structFullscreenEditor_1_1GUIContentColor.html", "d0/d88/structFullscreenEditor_1_1GUIContentColor" ],
+      [ "GUIEnabled", "d1/d22/structFullscreenEditor_1_1GUIEnabled.html", "d1/d22/structFullscreenEditor_1_1GUIEnabled" ],
+      [ "GUIFade", "d4/d37/classFullscreenEditor_1_1GUIFade.html", "d4/d37/classFullscreenEditor_1_1GUIFade" ],
+      [ "GUIIndent", "d5/da3/classFullscreenEditor_1_1GUIIndent.html", "d5/da3/classFullscreenEditor_1_1GUIIndent" ],
+      [ "Integration", "d2/d2d/classFullscreenEditor_1_1Integration.html", "d2/d2d/classFullscreenEditor_1_1Integration" ],
+      [ "KeepFullscreenBelow", "d7/dad/classFullscreenEditor_1_1KeepFullscreenBelow.html", "d7/dad/classFullscreenEditor_1_1KeepFullscreenBelow" ],
+      [ "Logger", "da/d08/classFullscreenEditor_1_1Logger.html", "da/d08/classFullscreenEditor_1_1Logger" ],
+      [ "MenuItems", "df/d28/classFullscreenEditor_1_1MenuItems.html", null ],
+      [ "Patcher", "d8/d29/classFullscreenEditor_1_1Patcher.html", "d8/d29/classFullscreenEditor_1_1Patcher" ],
+      [ "PlaceholderWindow", "dc/d80/classFullscreenEditor_1_1PlaceholderWindow.html", null ],
+      [ "PrefItem", "db/d2d/classFullscreenEditor_1_1PrefItem.html", "db/d2d/classFullscreenEditor_1_1PrefItem" ],
+      [ "PrefItemGUI", "d7/d6f/classFullscreenEditor_1_1PrefItemGUI.html", "d7/d6f/classFullscreenEditor_1_1PrefItemGUI" ],
+      [ "ReflectionUtility", "d1/d77/classFullscreenEditor_1_1ReflectionUtility.html", "d1/d77/classFullscreenEditor_1_1ReflectionUtility" ],
+      [ "RestoreCursorState", "df/d2c/classFullscreenEditor_1_1RestoreCursorState.html", null ],
+      [ "Shortcut", "d7/dbe/classFullscreenEditor_1_1Shortcut.html", "d7/dbe/classFullscreenEditor_1_1Shortcut" ],
+      [ "SuppressLog", "de/d31/classFullscreenEditor_1_1SuppressLog.html", "de/d31/classFullscreenEditor_1_1SuppressLog" ],
+      [ "Types", "dd/d73/classFullscreenEditor_1_1Types.html", "dd/d73/classFullscreenEditor_1_1Types" ],
+      [ "ViewPyramid", "d3/d9f/structFullscreenEditor_1_1ViewPyramid.html", "d3/d9f/structFullscreenEditor_1_1ViewPyramid" ]
+    ] ],
     [ "Spelunx", "d1/d34/namespaceSpelunx.html", [
       [ "CavernRenderer", "db/d6f/classSpelunx_1_1CavernRenderer.html", "db/d6f/classSpelunx_1_1CavernRenderer" ]
-    ] ]
+    ] ],
+    [ "MoveWith", "d7/d6e/classMoveWith.html", "d7/d6e/classMoveWith" ]
 ];

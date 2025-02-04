@@ -1,0 +1,4 @@
+<map id="FullscreenEditor.SuppressLog" name="FullscreenEditor.SuppressLog">
+<area shape="rect" id="node1" title="Helper class for suppressing unity logs when calling a method that may show unwanted logs." alt="" coords="5,131,216,223"/>
+<area shape="rect" id="node2" title=" " alt="" coords="61,5,160,83"/>
+</map>

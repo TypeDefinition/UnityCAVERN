@@ -1,0 +1,3 @@
+<map id="FullscreenEditor.FullscreenOnPlay" name="FullscreenEditor.FullscreenOnPlay">
+<area shape="rect" id="node1" title="Toggle fullscreen upon playmode change if FullscreenPreferences.FullscreenOnPlayEnabled is set to tru..." alt="" coords="5,5,271,141"/>
+</map>

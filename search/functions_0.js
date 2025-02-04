@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['getipd_0',['GetIPD',['../db/d6f/classSpelunx_1_1CavernRenderer.html#a4a907098979b5ebe098fd1e40b7c7719',1,'Spelunx::CavernRenderer']]],
-  ['getstereoscopicmode_1',['GetStereoscopicMode',['../db/d6f/classSpelunx_1_1CavernRenderer.html#af04e8e207d23babc043f92e52804b9e3',1,'Spelunx::CavernRenderer']]]
+  ['afteropening_0',['AfterOpening',['../da/dd0/classFullscreenEditor_1_1FullscreenContainer.html#afaad3fb21f50807ac916967ec8f9dce8',1,'FullscreenEditor.FullscreenContainer.AfterOpening()'],['../db/df0/classFullscreenEditor_1_1FullscreenWindow.html#a79f3dbc33a3d83b8a355b37b892149cb',1,'FullscreenEditor.FullscreenWindow.AfterOpening()']]]
 ];

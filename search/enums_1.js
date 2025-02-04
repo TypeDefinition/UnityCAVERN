@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['stereoscopicmode_0',['StereoscopicMode',['../db/d6f/classSpelunx_1_1CavernRenderer.html#a0148e81d317f0781cca5980cbdbc136b',1,'Spelunx::CavernRenderer']]]
+  ['devicecap_0',['DeviceCap',['../d3/d0b/classFullscreenEditor_1_1Windows_1_1GDI32.html#a613edd60384de3faddf152ffb9665558',1,'FullscreenEditor::Windows::GDI32']]],
+  ['displaydevicestateflags_1',['DisplayDeviceStateFlags',['../d6/ddb/namespaceFullscreenEditor_1_1Windows.html#ac98cb7e6498b724af014eedfb9c13466',1,'FullscreenEditor::Windows']]]
 ];

@@ -1,0 +1,6 @@
+<map id="FullscreenEditor.FullscreenView" name="FullscreenEditor.FullscreenView">
+<area shape="rect" id="node1" title=" " alt="" coords="54,507,281,613"/>
+<area shape="rect" id="node2" href="$da/dd0/classFullscreenEditor_1_1FullscreenContainer.html" title="Manages the WindowContainers, Views and Windows that will be fullscreened." alt="" coords="46,189,289,457"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,20,135,97"/>
+<area shape="rect" id="node4" href="$d3/d9f/structFullscreenEditor_1_1ViewPyramid.html" title="Represents the pyramid containing all the elements that make up a window." alt="" coords="159,5,373,112"/>
+</map>

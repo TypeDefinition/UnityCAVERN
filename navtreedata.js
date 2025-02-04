@@ -28,27 +28,41 @@ var NAVTREE =
     [ "CHANGELOG", "df/d11/md_CAVERN_Packages_com_spelunx_cavern_toolkit_CHANGELOG.html", null ],
     [ "README", "d3/dd7/md_CAVERN_Packages_com_spelunx_cavern_toolkit_README.html", null ],
     [ "Namespaces", "namespaces.html", [
-      [ "Namespace List", "namespaces.html", "namespaces_dup" ]
+      [ "Namespace List", "namespaces.html", "namespaces_dup" ],
+      [ "Namespace Members", "namespacemembers.html", [
+        [ "All", "namespacemembers.html", null ],
+        [ "Enumerations", "namespacemembers_enum.html", null ]
+      ] ]
     ] ],
     [ "Classes", "annotated.html", [
       [ "Class List", "annotated.html", "annotated_dup" ],
       [ "Class Index", "classes.html", null ],
       [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
       [ "Class Members", "functions.html", [
-        [ "All", "functions.html", null ],
+        [ "All", "functions.html", "functions_dup" ],
         [ "Functions", "functions_func.html", null ],
-        [ "Enumerations", "functions_enum.html", null ]
+        [ "Variables", "functions_vars.html", null ],
+        [ "Enumerations", "functions_enum.html", null ],
+        [ "Properties", "functions_prop.html", null ]
       ] ]
     ] ],
     [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ]
+      [ "File List", "files.html", "files_dup" ],
+      [ "File Members", "globals.html", [
+        [ "All", "globals.html", null ],
+        [ "Typedefs", "globals_type.html", null ]
+      ] ]
     ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"annotated.html"
+"annotated.html",
+"d3/dd5/classFullscreenEditor_1_1Fullscreen.html#af3d5ffd64d53e612f822a99314e274f8",
+"d7/dbe/classFullscreenEditor_1_1Shortcut.html#adb4d4513494e0e6acca94f499b6a23a4",
+"db/df0/classFullscreenEditor_1_1FullscreenWindow.html#adbd5467a7b26278b84c4ef3aabe35be9",
+"functions_p.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

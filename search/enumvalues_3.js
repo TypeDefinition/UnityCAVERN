@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['stereo_0',['Stereo',['../db/d6f/classSpelunx_1_1CavernRenderer.html#a0148e81d317f0781cca5980cbdbc136babbc45d9b35436f5f0ed9e33499efcea9',1,'Spelunx::CavernRenderer']]]
+  ['fullscreen_0',['Fullscreen',['../dc/df1/namespaceFullscreenEditor.html#a5250fb8d9496e18bea2d536ef21dc532a0829ea6734059d66e6bf87096b215dc1',1,'FullscreenEditor']]]
 ];

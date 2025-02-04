@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['low_0',['Low',['../db/d6f/classSpelunx_1_1CavernRenderer.html#a622d9665594741233bb0fff8de365d68a28d0edd045e05cf5af64e35ae0c4c6ef',1,'Spelunx::CavernRenderer']]]
+  ['custom_0',['Custom',['../dc/df1/namespaceFullscreenEditor.html#adf2a061068678b5ab2760dc7e6486f4da90589c47f06eb971d548591f23c285af',1,'FullscreenEditor']]]
 ];
