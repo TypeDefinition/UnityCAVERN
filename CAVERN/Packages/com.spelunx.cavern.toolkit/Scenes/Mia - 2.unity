@@ -1131,7 +1131,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1634637349216594375, guid: b2a5547d302c16e4187116eef3cc601f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.4344707
+      value: -5.6
       objectReference: {fileID: 0}
     - target: {fileID: 1634637349216594375, guid: b2a5547d302c16e4187116eef3cc601f, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1139,7 +1139,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1634637349216594375, guid: b2a5547d302c16e4187116eef3cc601f, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.5
+      value: 4.63
       objectReference: {fileID: 0}
     - target: {fileID: 1634637349216594375, guid: b2a5547d302c16e4187116eef3cc601f, type: 3}
       propertyPath: m_LocalRotation.w
@@ -12935,6 +12935,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a1fa763d29e399f48a74470397428b21, type: 3}
+--- !u!1001 &601357893
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 3855698393650615186, guid: bd6d830ce9e8d3f49a781af555461a97, type: 3}
+      propertyPath: m_Name
+      value: Flower2 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524395713528236328, guid: bd6d830ce9e8d3f49a781af555461a97, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -11.321991
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524395713528236328, guid: bd6d830ce9e8d3f49a781af555461a97, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.13000011
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524395713528236328, guid: bd6d830ce9e8d3f49a781af555461a97, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.4732888
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524395713528236328, guid: bd6d830ce9e8d3f49a781af555461a97, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.20812686
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524395713528236328, guid: bd6d830ce9e8d3f49a781af555461a97, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.20812686
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524395713528236328, guid: bd6d830ce9e8d3f49a781af555461a97, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.67578346
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524395713528236328, guid: bd6d830ce9e8d3f49a781af555461a97, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.67578346
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524395713528236328, guid: bd6d830ce9e8d3f49a781af555461a97, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524395713528236328, guid: bd6d830ce9e8d3f49a781af555461a97, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4524395713528236328, guid: bd6d830ce9e8d3f49a781af555461a97, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 145.765
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bd6d830ce9e8d3f49a781af555461a97, type: 3}
 --- !u!4 &601573701 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 045954a4d7de34248b1792ff9ea7c300, type: 3}
@@ -27367,7 +27424,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 96c589eadfaa0c44eb1cbc37fba98eef, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1.5782027
+      value: 1.89
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 96c589eadfaa0c44eb1cbc37fba98eef, type: 3}
       propertyPath: m_LocalRotation.w
@@ -37048,4 +37105,5 @@ SceneRoots:
   - {fileID: 1043421711}
   - {fileID: 1671806512}
   - {fileID: 175596970}
+  - {fileID: 601357893}
   - {fileID: 1023468399}
