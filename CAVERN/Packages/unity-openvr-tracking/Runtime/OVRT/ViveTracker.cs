@@ -74,7 +74,7 @@ namespace OVRT
 
         private void OnNewBoundPose(string binding, TrackedDevicePose_t pose, int deviceIndex)
         {
-            if (nameof(this.binding) != binding)
+            if (this.binding.ToString() != binding)
                 return;
 
             IsValid = false;
