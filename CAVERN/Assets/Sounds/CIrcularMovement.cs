@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Audio;
 
-public class CIrcularMovement : MonoBehaviour
+public class CircularMovement : MonoBehaviour
 {
     [SerializeField] private float radius = 3f;
     [SerializeField] private float speed = 2f;
