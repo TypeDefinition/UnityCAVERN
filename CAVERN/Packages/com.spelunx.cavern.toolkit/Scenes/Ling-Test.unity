@@ -7334,6 +7334,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1174360818}
+  - component: {fileID: 1174360820}
   - component: {fileID: 1174360819}
   m_Layer: 0
   m_Name: environment
@@ -7454,6 +7455,21 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1174360820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1174360817}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93680384542e3d743bf7e52a901d4f61, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 6
+  speed: 1
+  centerPosition: {x: 0, y: 0, z: 0}
 --- !u!1001 &1178263094
 PrefabInstance:
   m_ObjectHideFlags: 0
