@@ -6,7 +6,7 @@ var searchData=
   ['maindisplay_3',['MainDisplay',['../dc/df1/namespaceFullscreenEditor.html#adf2a061068678b5ab2760dc7e6486f4dab5cbb2a839660f4e9d1f9f804465a7cb',1,'FullscreenEditor']]],
   ['mainview_4',['MainView',['../dd/d73/classFullscreenEditor_1_1Types.html#a1106258462ff962ad02f5f800bc4681d',1,'FullscreenEditor::Types']]],
   ['mainwindow_5',['MainWindow',['../dc/df1/namespaceFullscreenEditor.html#a5250fb8d9496e18bea2d536ef21dc532a85644ee843dfffda19287556b9e18ea3',1,'FullscreenEditor']]],
-  ['makefullscreen_6',['MakeFullscreen',['../d3/dd5/classFullscreenEditor_1_1Fullscreen.html#acbd0ef97417836fc6e7ef895b6b9a9c7',1,'FullscreenEditor.Fullscreen.MakeFullscreen(Type type, EditorWindow window=null, bool disposableWindow=false)'],['../d3/dd5/classFullscreenEditor_1_1Fullscreen.html#abf4b88d6f8921c440a95dcf2325f89c5',1,'FullscreenEditor.Fullscreen.MakeFullscreen(ScriptableObject view)']]],
+  ['makefullscreen_6',['MakeFullscreen',['../d3/dd5/classFullscreenEditor_1_1Fullscreen.html#abf4b88d6f8921c440a95dcf2325f89c5',1,'FullscreenEditor.Fullscreen.MakeFullscreen(ScriptableObject view)'],['../d3/dd5/classFullscreenEditor_1_1Fullscreen.html#acbd0ef97417836fc6e7ef895b6b9a9c7',1,'FullscreenEditor.Fullscreen.MakeFullscreen(Type type, EditorWindow window=null, bool disposableWindow=false)']]],
   ['makefullscreen_3c_20t_20_3e_7',['MakeFullscreen&lt; T &gt;',['../d3/dd5/classFullscreenEditor_1_1Fullscreen.html#a07a9b855a206c482f6c659eddef46c2a',1,'FullscreenEditor::Fullscreen']]],
   ['mdt_5fangular_5fdpi_8',['MDT_ANGULAR_DPI',['../d6/ddb/namespaceFullscreenEditor_1_1Windows.html#a3fabe7a6037eebf13417fda85ea5b475ab2f7fdace51055b59c7db65253c8d157',1,'FullscreenEditor::Windows']]],
   ['mdt_5feffective_5fdpi_9',['MDT_EFFECTIVE_DPI',['../d6/ddb/namespaceFullscreenEditor_1_1Windows.html#a3fabe7a6037eebf13417fda85ea5b475a08129d200a12349addbd38fb6ed7f497',1,'FullscreenEditor::Windows']]],
@@ -28,7 +28,5 @@ var searchData=
   ['mouseposition_25',['MousePosition',['../dd/d19/classFullscreenEditor_1_1FullscreenUtility.html#a23f38e69250bdfe55a3e241a15d5735f',1,'FullscreenEditor::FullscreenUtility']]],
   ['movewith_26',['MoveWith',['../d7/d6e/classMoveWith.html',1,'']]],
   ['movewith_2ecs_27',['MoveWith.cs',['../db/d17/MoveWith_8cs.html',1,'']]],
-  ['movingcube_28',['MovingCube',['../dc/d68/classMovingCube.html',1,'']]],
-  ['movingcube_2ecs_29',['MovingCube.cs',['../d7/df9/MovingCube_8cs.html',1,'']]],
-  ['multidriver_30',['MultiDriver',['../d6/ddb/namespaceFullscreenEditor_1_1Windows.html#ac98cb7e6498b724af014eedfb9c13466adc4524f3ebf041e76e96461d41989f7d',1,'FullscreenEditor::Windows']]]
+  ['multidriver_28',['MultiDriver',['../d6/ddb/namespaceFullscreenEditor_1_1Windows.html#ac98cb7e6498b724af014eedfb9c13466adc4524f3ebf041e76e96461d41989f7d',1,'FullscreenEditor::Windows']]]
 ];
