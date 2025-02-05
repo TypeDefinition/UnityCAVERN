@@ -40,6 +40,7 @@ var hierarchy =
     [ "FullscreenEditor.Windows.MonitorInfoEx", "d7/d30/structFullscreenEditor_1_1Windows_1_1MonitorInfoEx.html", null ],
     [ "MonoBehaviour", null, [
       [ "MoveWith", "d7/d6e/classMoveWith.html", null ],
+      [ "MovingCube", "dc/d68/classMovingCube.html", null ],
       [ "Spelunx.CavernRenderer", "db/d6f/classSpelunx_1_1CavernRenderer.html", null ]
     ] ],
     [ "FullscreenEditor.Linux.NativeFullscreenHooks", "da/d86/classFullscreenEditor_1_1Linux_1_1NativeFullscreenHooks.html", null ],
