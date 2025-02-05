@@ -114,6 +114,11 @@ namespace OVRT
             IsConnected = false;
         }
 
+        private void OnButtonPressed(int deviceIndex, EVRButtonId button, bool pressed)
+        {
+            Debug.Log($"{deviceIndex}\t{button}\t{pressed}");
+        }
+
         private void Awake()
         {
             _onNewBoundPoseAction += OnNewBoundPose;
@@ -126,6 +131,7 @@ namespace OVRT
             OVRT.OVRT_Events.NewBoundPose.AddListener(_onNewBoundPoseAction);
             OVRT.OVRT_Events.TrackedDeviceConnected.AddListener(_onDeviceConnectedAction);
             OVRT.OVRT_Events.TrackerRolesChanged.AddListener(_onTrackerRolesChanged);
+            OVRT.OVRT_Events.ButtonPressed.AddListener(OnButtonPressed);
         }
 
         private void OnDisable()
@@ -133,6 +139,7 @@ namespace OVRT
             OVRT.OVRT_Events.NewBoundPose.RemoveListener(_onNewBoundPoseAction);
             OVRT.OVRT_Events.TrackedDeviceConnected.RemoveListener(_onDeviceConnectedAction);
             OVRT.OVRT_Events.TrackerRolesChanged.RemoveListener(_onTrackerRolesChanged);
+            OVRT.OVRT_Events.ButtonPressed.RemoveListener(OnButtonPressed);
             IsValid = false;
             IsConnected = false;
         }
