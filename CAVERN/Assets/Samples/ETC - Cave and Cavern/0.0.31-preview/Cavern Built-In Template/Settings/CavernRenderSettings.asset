@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec20df507abd34537a597343dfa48755, type: 3}
   m_Name: CavernRenderSettings
   m_EditorClassIdentifier: 
-  stereoSeparation: 0.1
+  stereoSeparation: 0.064
   rigType: 1
   camOutputMode: 0
   stereoMode: 1
