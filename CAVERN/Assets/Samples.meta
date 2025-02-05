@@ -1,5 +1,9 @@
 fileFormatVersion: 2
-guid: aa0d2d3e831955a4189c4f3ceae07692
+<<<<<<<< HEAD:CAVERN/Assets/TerriDebug/DirectionalCube.meta
+guid: 531cdc481cbd6214b9b7a4c99d723940
+========
+guid: d0e6d69b15d67a547b649325661406cb
+>>>>>>>> b26f8c814dbd3935e4b0f48625c094a86563e53d:CAVERN/Assets/Samples.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
