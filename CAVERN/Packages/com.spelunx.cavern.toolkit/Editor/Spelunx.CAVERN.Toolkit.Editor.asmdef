@@ -1,7 +1,9 @@
 {
     "name": "Spelunx.CAVERN.Toolkit.Editor",
     "rootNamespace": "",
-    "references": [],
+    "references": [
+        "GUID:5cf6644817ffaac4e91194cca1efea53"
+    ],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

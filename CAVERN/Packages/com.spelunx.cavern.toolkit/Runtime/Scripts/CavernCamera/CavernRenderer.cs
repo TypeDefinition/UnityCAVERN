@@ -29,9 +29,14 @@ namespace Spelunx {
             }
         }*/
 
-        public enum StereoscopicMode { Mono, Stereo, }
-        
-        public enum EyeResolution {
+        public enum StereoscopicMode {
+            Mono,
+            Stereo,
+            MonoHeadTracked,
+            StereoHeadTracked,
+        }
+
+        public enum CubemapResolution {
             Low = 1024,
             Mid = 2048,
             High = 4096,
@@ -53,7 +58,7 @@ namespace Spelunx {
 
         [Header("Camera Settings")]
         [SerializeField] private StereoscopicMode stereoMode = StereoscopicMode.Mono;
-        [SerializeField] private EyeResolution eyeResolution = EyeResolution.Mid;
+        [SerializeField] private CubemapResolution cubemapResolution = CubemapResolution.Mid;
         [SerializeField, Range(0.0f, 1.0f)] private float interpupillaryDistance = 0.1f; // IPD in metres.
         [SerializeField, Min(0.1f)] private float cavernHeight = 2.0f; // Cavern physical screen height in metres.
         [SerializeField, Min(0.1f)] private float cavernRadius = 3.0f; // Cavern physical screen radius in metres.
@@ -65,11 +70,22 @@ namespace Spelunx {
         [SerializeField] private Camera captureCamera;
 
         private RenderTexture[] cubemaps;
+        private RenderTexture screenViewerTexture;
         private Material material;
         // private ProjectionPass projectionPass; // This does not work.
 
-        public float GetIPD() { return interpupillaryDistance; }
+        public CubemapResolution GetCubemapResolution() { return cubemapResolution; }
         public StereoscopicMode GetStereoscopicMode() { return stereoMode; }
+        public float GetIPD() { return interpupillaryDistance; }
+        public float GetCavernHeight() { return cavernHeight; }
+        public float GetCavernRadius() { return cavernRadius; }
+        public float GetCavernAngle() { return cavernAngle; }
+        public float GetCavernElevation() { return cavernElevation; }
+        public RenderTexture GetScreenViewerTexture() { return screenViewerTexture; }
+        
+        public float GetAspectRatio() {
+            return ((cavernAngle / 360.0f) * 2.0f * cavernRadius * Mathf.PI) / cavernHeight;
+        }
 
         private void OnEnable() {
             RenderPipelineManager.beginContextRendering += OnBeginContextRendering;
@@ -89,11 +105,15 @@ namespace Spelunx {
             // Initialise render textures.
             cubemaps = new RenderTexture[(int)CubemapIndex.Num];
             for (int i = 0; i < (int)CubemapIndex.Num; ++i) {
-                cubemaps[i] = new RenderTexture((int)eyeResolution, (int)eyeResolution, 32, RenderTextureFormat.ARGB32);
+                cubemaps[i] = new RenderTexture((int)cubemapResolution, (int)cubemapResolution, 32, RenderTextureFormat.ARGB32);
                 cubemaps[i].dimension = TextureDimension.Cube;
                 cubemaps[i].wrapMode = TextureWrapMode.Clamp;
             }
-            
+
+            screenViewerTexture = new RenderTexture(1024, 1024, 32, RenderTextureFormat.ARGB32); // Use a low resolution to minimise performance affected by debugging.
+            screenViewerTexture.dimension = TextureDimension.Tex2D;
+            screenViewerTexture.wrapMode = TextureWrapMode.Clamp;
+
             // Initialise material.
             material = new Material(shader);
             material.SetTexture("_CubemapMono", cubemaps[(int)CubemapIndex.Mono]);
@@ -112,6 +132,11 @@ namespace Spelunx {
 
         private void Update() {
             RenderEyes();
+
+            // In editor mode, blit to the screen viewer.
+#if UNITY_EDITOR
+            Graphics.Blit(null, screenViewerTexture, material);
+#endif
         }
 
         private void RenderEyes() {
@@ -121,6 +146,7 @@ namespace Spelunx {
             const int bottomMask = 1 << (int)CubemapFace.NegativeY;
             const int frontMask = 1 << (int)CubemapFace.PositiveZ;
             const int backMask = 1 << (int)CubemapFace.NegativeZ;
+            const int allMask = leftMask | rightMask | topMask | bottomMask | frontMask | backMask;
 
             switch (stereoMode) {
                 case StereoscopicMode.Mono:
@@ -144,6 +170,7 @@ namespace Spelunx {
                     captureCamera.RenderToCubemap(cubemaps[(int)CubemapIndex.Front], leftMask | rightMask, Camera.MonoOrStereoscopicEye.Left);
                     captureCamera.transform.localPosition = new Vector3(0.0f, 0.0f, -interpupillaryDistance * 0.5f);
                     captureCamera.RenderToCubemap(cubemaps[(int)CubemapIndex.Back], leftMask | rightMask, Camera.MonoOrStereoscopicEye.Right);
+                    captureCamera.transform.localPosition = Vector3.zero;
                     break;
             }
 

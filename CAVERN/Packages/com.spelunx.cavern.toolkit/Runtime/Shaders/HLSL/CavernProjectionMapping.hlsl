@@ -86,6 +86,8 @@ float4 Fragment(Vert2Frag input) : SV_TARGET {
     uv2d = uv2d * 2.0 - float2(1.0, 1.0);
     float screenAngle = uv2d.x * _CavernAngle * 0.5f; // Horizontal Screen Angle (Degrees)
     float screenAngleRad = radians(screenAngle);
+
+    // Take note that angle 0 points down the Z-axis, not the X-axis.
     float3 uvCube = normalize(float3(_CavernRadius * sin(screenAngleRad), _CavernHeight * 0.5f * uv2d.y + _CavernElevation, _CavernRadius * cos(screenAngleRad)));
 
     // Monoscopic
