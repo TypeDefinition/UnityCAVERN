@@ -11,5 +11,5 @@ var searchData=
   ['enummonitorsdelegate_8',['EnumMonitorsDelegate',['../df/d81/classFullscreenEditor_1_1Windows_1_1User32.html#a4362c769b0897d4d91523bcf316445cd',1,'FullscreenEditor::Windows::User32']]],
   ['error_9',['Error',['../da/d08/classFullscreenEditor_1_1Logger.html#a353435f21d4e9b3e581c4af503aba9da',1,'FullscreenEditor.Logger.Error(string message, params object[] args)'],['../da/d08/classFullscreenEditor_1_1Logger.html#a4a877ec911a5d029228f08bc333150a5',1,'FullscreenEditor.Logger.Error(Object context, string message, params object[] args)']]],
   ['exception_10',['Exception',['../da/d08/classFullscreenEditor_1_1Logger.html#a937b51f24a6ee45986269f9ba9c134f9',1,'FullscreenEditor.Logger.Exception(Exception exception)'],['../da/d08/classFullscreenEditor_1_1Logger.html#a1e1adbc682704e2e96b5e8807d873237',1,'FullscreenEditor.Logger.Exception(Object context, Exception exception)']]],
-  ['eyeresolution_11',['EyeResolution',['../db/d6f/classSpelunx_1_1CavernRenderer.html#a622d9665594741233bb0fff8de365d68',1,'Spelunx::CavernRenderer']]]
+  ['eyeview_11',['EyeView',['../d3/dc5/classSpelunx_1_1CavernScreenViewer.html#a719676a7ae545db49172d541ea8308aa',1,'Spelunx::CavernScreenViewer']]]
 ];

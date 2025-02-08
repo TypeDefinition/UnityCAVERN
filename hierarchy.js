@@ -9,6 +9,9 @@ var hierarchy =
     [ "FullscreenEditor.DisableSceneView", "dc/dfc/classFullscreenEditor_1_1DisableSceneView.html", null ],
     [ "FullscreenEditor.Windows.DisplayDevice", "d5/df2/structFullscreenEditor_1_1Windows_1_1DisplayDevice.html", null ],
     [ "FullscreenEditor.DisplayInfo", "d5/dfa/classFullscreenEditor_1_1DisplayInfo.html", null ],
+    [ "Editor", null, [
+      [ "Spelunx.CavernScreenViewerInspector", "d8/d6c/classSpelunx_1_1CavernScreenViewerInspector.html", null ]
+    ] ],
     [ "EditorWindow", null, [
       [ "FullscreenEditor.PlaceholderWindow", "dc/d80/classFullscreenEditor_1_1PlaceholderWindow.html", null ]
     ] ],
@@ -40,7 +43,8 @@ var hierarchy =
     [ "FullscreenEditor.Windows.MonitorInfoEx", "d7/d30/structFullscreenEditor_1_1Windows_1_1MonitorInfoEx.html", null ],
     [ "MonoBehaviour", null, [
       [ "MoveWith", "d7/d6e/classMoveWith.html", null ],
-      [ "Spelunx.CavernRenderer", "db/d6f/classSpelunx_1_1CavernRenderer.html", null ]
+      [ "Spelunx.CavernRenderer", "db/d6f/classSpelunx_1_1CavernRenderer.html", null ],
+      [ "Spelunx.CavernScreenViewer", "d3/dc5/classSpelunx_1_1CavernScreenViewer.html", null ]
     ] ],
     [ "FullscreenEditor.Linux.NativeFullscreenHooks", "da/d86/classFullscreenEditor_1_1Linux_1_1NativeFullscreenHooks.html", null ],
     [ "FullscreenEditor.Windows.NativeRect", "d1/d4d/structFullscreenEditor_1_1Windows_1_1NativeRect.html", null ],

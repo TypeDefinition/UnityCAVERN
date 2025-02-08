@@ -30,9 +30,10 @@ var searchData=
   ['spelunx_27',['Spelunx',['../d1/d34/namespaceSpelunx.html',1,'']]],
   ['stateflags_28',['StateFlags',['../d5/df2/structFullscreenEditor_1_1Windows_1_1DisplayDevice.html#a2ad5e86a3d8deab06a54fa4aa6a65e9b',1,'FullscreenEditor::Windows::DisplayDevice']]],
   ['stereo_29',['Stereo',['../db/d6f/classSpelunx_1_1CavernRenderer.html#a0148e81d317f0781cca5980cbdbc136babbc45d9b35436f5f0ed9e33499efcea9',1,'Spelunx::CavernRenderer']]],
-  ['stereoscopicmode_30',['StereoscopicMode',['../db/d6f/classSpelunx_1_1CavernRenderer.html#a0148e81d317f0781cca5980cbdbc136b',1,'Spelunx::CavernRenderer']]],
-  ['structs_2ecs_31',['Structs.cs',['../d4/d7f/Structs_8cs.html',1,'']]],
-  ['suppresslog_32',['SuppressLog',['../de/d31/classFullscreenEditor_1_1SuppressLog.html',1,'FullscreenEditor.SuppressLog'],['../de/d31/classFullscreenEditor_1_1SuppressLog.html#a45857c00cce1e6df8b60bbb93a2d3887',1,'FullscreenEditor.SuppressLog.SuppressLog()']]],
-  ['swapmethods_33',['SwapMethods',['../d8/d29/classFullscreenEditor_1_1Patcher.html#a6822a95891dd6515f7f264d06802c197',1,'FullscreenEditor::Patcher']]],
-  ['swapviews_34',['SwapViews',['../db/ddb/classFullscreenEditor_1_1FullscreenView.html#aead5dd4ae5e107c8bb13781fca687811',1,'FullscreenEditor::FullscreenView']]]
+  ['stereoheadtracked_30',['StereoHeadTracked',['../db/d6f/classSpelunx_1_1CavernRenderer.html#a0148e81d317f0781cca5980cbdbc136ba768d6f25b513f15d82fcbeb2f3454ce2',1,'Spelunx::CavernRenderer']]],
+  ['stereoscopicmode_31',['StereoscopicMode',['../db/d6f/classSpelunx_1_1CavernRenderer.html#a0148e81d317f0781cca5980cbdbc136b',1,'Spelunx::CavernRenderer']]],
+  ['structs_2ecs_32',['Structs.cs',['../d4/d7f/Structs_8cs.html',1,'']]],
+  ['suppresslog_33',['SuppressLog',['../de/d31/classFullscreenEditor_1_1SuppressLog.html',1,'FullscreenEditor.SuppressLog'],['../de/d31/classFullscreenEditor_1_1SuppressLog.html#a45857c00cce1e6df8b60bbb93a2d3887',1,'FullscreenEditor.SuppressLog.SuppressLog()']]],
+  ['swapmethods_34',['SwapMethods',['../d8/d29/classFullscreenEditor_1_1Patcher.html#a6822a95891dd6515f7f264d06802c197',1,'FullscreenEditor::Patcher']]],
+  ['swapviews_35',['SwapViews',['../db/ddb/classFullscreenEditor_1_1FullscreenView.html#aead5dd4ae5e107c8bb13781fca687811',1,'FullscreenEditor::FullscreenView']]]
 ];

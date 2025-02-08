@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['eyeresolution_0',['EyeResolution',['../db/d6f/classSpelunx_1_1CavernRenderer.html#a622d9665594741233bb0fff8de365d68',1,'Spelunx::CavernRenderer']]]
+  ['eyeview_0',['EyeView',['../d3/dc5/classSpelunx_1_1CavernScreenViewer.html#a719676a7ae545db49172d541ea8308aa',1,'Spelunx::CavernScreenViewer']]]
 ];

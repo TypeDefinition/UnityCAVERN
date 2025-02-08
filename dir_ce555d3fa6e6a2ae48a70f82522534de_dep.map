@@ -1,13 +1,16 @@
 <map id="CAVERN/Packages/com.spelunx.cavern.toolkit" name="CAVERN/Packages/com.spelunx.cavern.toolkit">
-<area shape="rect" id="node4" href="dir_b01c7c08624eea0c9bd231fe16c209a7.html" title="Interactions" alt="" coords="1025,95,1124,120"/>
-<area shape="rect" id="node8" href="dir_aeec656b85632d0434e5ed5660c510f2.html" title="Displays" alt="" coords="707,95,786,120"/>
-<area shape="rect" id="node9" href="dir_38d1fc85555fc2a8b96c95bc0f235baa.html" title="Linux" alt="" coords="626,95,683,120"/>
-<area shape="rect" id="node10" href="dir_960641dacee25b72270efa7eea870732.html" title="Windows" alt="" coords="521,95,602,120"/>
-<area shape="rect" id="clust4" href="dir_f005a58be210bc980e3354d059bef4df.html" alt="" coords="1015,84,1225,131"/>
-<area shape="rect" id="clust3" href="dir_4c42a0c47993346d7f7279888727bc96.html" alt="" coords="913,73,1236,141"/>
-<area shape="rect" id="clust7" href="dir_47db7b9a2fbdbea977728a02f45aab3c.html" alt="" coords="509,84,881,131"/>
-<area shape="rect" id="clust6" href="dir_fb12253613fa510bce92d589125feebc.html" alt="" coords="363,73,892,141"/>
-<area shape="rect" id="clust5" href="dir_7d962b7fd76dd8d45d25cec537f60dd9.html" alt="" coords="248,63,903,152"/>
-<area shape="rect" id="clust2" href="dir_ce555d3fa6e6a2ae48a70f82522534de.html" alt="" coords="27,52,1247,163"/>
-<area shape="rect" id="clust1" href="dir_4d28424d2fb2b3df06057c7c18905121.html" title="Packages" alt="" coords="16,16,1257,173"/>
+<area shape="rect" id="node3" href="dir_39740c0485e302aef7e17fbddfbf4676.html" title="Inspectors" alt="" coords="1402,95,1491,120"/>
+<area shape="rect" id="node6" href="dir_aceb00ec9cd5e02ce3ed261493180a7f.html" title="CavernCamera" alt="" coords="1149,95,1267,120"/>
+<area shape="rect" id="node7" href="dir_b01c7c08624eea0c9bd231fe16c209a7.html" title="Interactions" alt="" coords="1025,95,1124,120"/>
+<area shape="rect" id="node11" href="dir_aeec656b85632d0434e5ed5660c510f2.html" title="Displays" alt="" coords="707,95,786,120"/>
+<area shape="rect" id="node12" href="dir_38d1fc85555fc2a8b96c95bc0f235baa.html" title="Linux" alt="" coords="626,95,683,120"/>
+<area shape="rect" id="node13" href="dir_960641dacee25b72270efa7eea870732.html" title="Windows" alt="" coords="521,95,602,120"/>
+<area shape="rect" id="clust3" href="dir_f695c8091430629c4bdbc210940b2384.html" alt="" coords="1391,84,1587,131"/>
+<area shape="rect" id="clust5" href="dir_f005a58be210bc980e3354d059bef4df.html" alt="" coords="1015,84,1369,131"/>
+<area shape="rect" id="clust4" href="dir_4c42a0c47993346d7f7279888727bc96.html" alt="" coords="913,73,1380,141"/>
+<area shape="rect" id="clust8" href="dir_47db7b9a2fbdbea977728a02f45aab3c.html" alt="" coords="509,84,881,131"/>
+<area shape="rect" id="clust7" href="dir_fb12253613fa510bce92d589125feebc.html" alt="" coords="363,73,892,141"/>
+<area shape="rect" id="clust6" href="dir_7d962b7fd76dd8d45d25cec537f60dd9.html" alt="" coords="248,63,903,152"/>
+<area shape="rect" id="clust2" href="dir_ce555d3fa6e6a2ae48a70f82522534de.html" alt="" coords="27,52,1597,163"/>
+<area shape="rect" id="clust1" href="dir_4d28424d2fb2b3df06057c7c18905121.html" title="Packages" alt="" coords="16,16,1608,173"/>
 </map>

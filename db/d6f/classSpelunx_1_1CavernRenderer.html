@@ -107,8 +107,8 @@ Inheritance diagram for Spelunx.CavernRenderer:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../df/da1/classSpelunx_1_1CavernRenderer__inherit__graph.png" border="0" usemap="#aSpelunx_8CavernRenderer_inherit__map" alt="Inheritance graph"/></div>
 <map name="aSpelunx_8CavernRenderer_inherit__map" id="aSpelunx_8CavernRenderer_inherit__map">
-<area shape="rect" title=" " alt="" coords="5,131,195,223"/>
-<area shape="rect" title=" " alt="" coords="38,5,162,83"/>
+<area shape="rect" title=" " alt="" coords="5,131,212,325"/>
+<area shape="rect" title=" " alt="" coords="47,5,171,83"/>
 </map>
 </div>
 <div class="dynheader">
@@ -116,8 +116,8 @@ Collaboration diagram for Spelunx.CavernRenderer:</div>
 <div class="dyncontent">
 <div class="center"><img src="../../d8/dcc/classSpelunx_1_1CavernRenderer__coll__graph.png" border="0" usemap="#aSpelunx_8CavernRenderer_coll__map" alt="Collaboration graph"/></div>
 <map name="aSpelunx_8CavernRenderer_coll__map" id="aSpelunx_8CavernRenderer_coll__map">
-<area shape="rect" title=" " alt="" coords="5,131,195,223"/>
-<area shape="rect" title=" " alt="" coords="38,5,162,83"/>
+<area shape="rect" title=" " alt="" coords="5,131,212,325"/>
+<area shape="rect" title=" " alt="" coords="47,5,171,83"/>
 </map>
 </div>
 <table class="memberdecls">
@@ -125,45 +125,61 @@ Collaboration diagram for Spelunx.CavernRenderer:</div>
 Public Types</h2></td></tr>
 <tr class="memitem:a0148e81d317f0781cca5980cbdbc136b"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6f/classSpelunx_1_1CavernRenderer.html#a0148e81d317f0781cca5980cbdbc136b">StereoscopicMode</a> { <a class="el" href="../../db/d6f/classSpelunx_1_1CavernRenderer.html#a0148e81d317f0781cca5980cbdbc136ba5d9b47bd3b65072e0d5daf55f01da086">Mono</a>
 , <a class="el" href="../../db/d6f/classSpelunx_1_1CavernRenderer.html#a0148e81d317f0781cca5980cbdbc136babbc45d9b35436f5f0ed9e33499efcea9">Stereo</a>
+, <a class="el" href="../../db/d6f/classSpelunx_1_1CavernRenderer.html#a0148e81d317f0781cca5980cbdbc136baed187b813f32d975fd98033467d41470">MonoHeadTracked</a>
+, <a class="el" href="../../db/d6f/classSpelunx_1_1CavernRenderer.html#a0148e81d317f0781cca5980cbdbc136ba768d6f25b513f15d82fcbeb2f3454ce2">StereoHeadTracked</a>
  }</td></tr>
 <tr class="separator:a0148e81d317f0781cca5980cbdbc136b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a622d9665594741233bb0fff8de365d68"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6f/classSpelunx_1_1CavernRenderer.html#a622d9665594741233bb0fff8de365d68">EyeResolution</a> { <a class="el" href="../../db/d6f/classSpelunx_1_1CavernRenderer.html#a622d9665594741233bb0fff8de365d68a28d0edd045e05cf5af64e35ae0c4c6ef">Low</a> = 1024
-, <a class="el" href="../../db/d6f/classSpelunx_1_1CavernRenderer.html#a622d9665594741233bb0fff8de365d68a55c6b09cbca39ef0cdb728eb112a5049">Mid</a> = 2048
-, <a class="el" href="../../db/d6f/classSpelunx_1_1CavernRenderer.html#a622d9665594741233bb0fff8de365d68a655d20c1ca69519ca647684edbb2db35">High</a> = 4096
-, <a class="el" href="../../db/d6f/classSpelunx_1_1CavernRenderer.html#a622d9665594741233bb0fff8de365d68af0b44f10edcd3bdee6720430ac4111cd">VeryHigh</a> = 8192
+<tr class="memitem:adda79d22a92ae152c7e6e121e8e07f8d"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6f/classSpelunx_1_1CavernRenderer.html#adda79d22a92ae152c7e6e121e8e07f8d">CubemapResolution</a> { <a class="el" href="../../db/d6f/classSpelunx_1_1CavernRenderer.html#adda79d22a92ae152c7e6e121e8e07f8da28d0edd045e05cf5af64e35ae0c4c6ef">Low</a> = 1024
+, <a class="el" href="../../db/d6f/classSpelunx_1_1CavernRenderer.html#adda79d22a92ae152c7e6e121e8e07f8da55c6b09cbca39ef0cdb728eb112a5049">Mid</a> = 2048
+, <a class="el" href="../../db/d6f/classSpelunx_1_1CavernRenderer.html#adda79d22a92ae152c7e6e121e8e07f8da655d20c1ca69519ca647684edbb2db35">High</a> = 4096
+, <a class="el" href="../../db/d6f/classSpelunx_1_1CavernRenderer.html#adda79d22a92ae152c7e6e121e8e07f8daf0b44f10edcd3bdee6720430ac4111cd">VeryHigh</a> = 8192
  }</td></tr>
-<tr class="separator:a622d9665594741233bb0fff8de365d68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="separator:adda79d22a92ae152c7e6e121e8e07f8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4a907098979b5ebe098fd1e40b7c7719"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6f/classSpelunx_1_1CavernRenderer.html#a4a907098979b5ebe098fd1e40b7c7719">GetIPD</a> ()</td></tr>
-<tr class="separator:a4a907098979b5ebe098fd1e40b7c7719"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd2f14729472330f7633813fc424e1c7"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d6f/classSpelunx_1_1CavernRenderer.html#adda79d22a92ae152c7e6e121e8e07f8d">CubemapResolution</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6f/classSpelunx_1_1CavernRenderer.html#acd2f14729472330f7633813fc424e1c7">GetCubemapResolution</a> ()</td></tr>
+<tr class="separator:acd2f14729472330f7633813fc424e1c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af04e8e207d23babc043f92e52804b9e3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="../../db/d6f/classSpelunx_1_1CavernRenderer.html#a0148e81d317f0781cca5980cbdbc136b">StereoscopicMode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6f/classSpelunx_1_1CavernRenderer.html#af04e8e207d23babc043f92e52804b9e3">GetStereoscopicMode</a> ()</td></tr>
 <tr class="separator:af04e8e207d23babc043f92e52804b9e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a907098979b5ebe098fd1e40b7c7719"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6f/classSpelunx_1_1CavernRenderer.html#a4a907098979b5ebe098fd1e40b7c7719">GetIPD</a> ()</td></tr>
+<tr class="separator:a4a907098979b5ebe098fd1e40b7c7719"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae83a91249c06f2f47de2fef1463f4774"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6f/classSpelunx_1_1CavernRenderer.html#ae83a91249c06f2f47de2fef1463f4774">GetCavernHeight</a> ()</td></tr>
+<tr class="separator:ae83a91249c06f2f47de2fef1463f4774"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a93b87c49bc198a66316479cb96be13d5"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6f/classSpelunx_1_1CavernRenderer.html#a93b87c49bc198a66316479cb96be13d5">GetCavernRadius</a> ()</td></tr>
+<tr class="separator:a93b87c49bc198a66316479cb96be13d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a062f62440ae875cfb092d115ac8c2664"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6f/classSpelunx_1_1CavernRenderer.html#a062f62440ae875cfb092d115ac8c2664">GetCavernAngle</a> ()</td></tr>
+<tr class="separator:a062f62440ae875cfb092d115ac8c2664"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1828e5d5df6cd43fc22345ed6918c97b"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6f/classSpelunx_1_1CavernRenderer.html#a1828e5d5df6cd43fc22345ed6918c97b">GetCavernElevation</a> ()</td></tr>
+<tr class="separator:a1828e5d5df6cd43fc22345ed6918c97b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1df691b2c8fab76f726d3aca072e96b"><td class="memItemLeft" align="right" valign="top">RenderTexture&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6f/classSpelunx_1_1CavernRenderer.html#ad1df691b2c8fab76f726d3aca072e96b">GetScreenViewerTexture</a> ()</td></tr>
+<tr class="separator:ad1df691b2c8fab76f726d3aca072e96b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae7e9d8e7f306d9d651e93d840c8ba573"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="../../db/d6f/classSpelunx_1_1CavernRenderer.html#ae7e9d8e7f306d9d651e93d840c8ba573">GetAspectRatio</a> ()</td></tr>
+<tr class="separator:ae7e9d8e7f306d9d651e93d840c8ba573"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p class="definition">Definition at line <a class="el" href="../../d8/d7b/CavernRenderer_8cs_source.html#l00006">6</a> of file <a class="el" href="../../d8/d7b/CavernRenderer_8cs_source.html">CavernRenderer.cs</a>.</p>
 </div><h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="a622d9665594741233bb0fff8de365d68" name="a622d9665594741233bb0fff8de365d68"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a622d9665594741233bb0fff8de365d68">&#9670;&#160;</a></span>EyeResolution</h2>
+<a id="adda79d22a92ae152c7e6e121e8e07f8d" name="adda79d22a92ae152c7e6e121e8e07f8d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adda79d22a92ae152c7e6e121e8e07f8d">&#9670;&#160;</a></span>CubemapResolution</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="../../db/d6f/classSpelunx_1_1CavernRenderer.html#a622d9665594741233bb0fff8de365d68">Spelunx.CavernRenderer.EyeResolution</a></td>
+          <td class="memname">enum <a class="el" href="../../db/d6f/classSpelunx_1_1CavernRenderer.html#adda79d22a92ae152c7e6e121e8e07f8d">Spelunx.CavernRenderer.CubemapResolution</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a622d9665594741233bb0fff8de365d68a28d0edd045e05cf5af64e35ae0c4c6ef" name="a622d9665594741233bb0fff8de365d68a28d0edd045e05cf5af64e35ae0c4c6ef"></a>Low&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a622d9665594741233bb0fff8de365d68a55c6b09cbca39ef0cdb728eb112a5049" name="a622d9665594741233bb0fff8de365d68a55c6b09cbca39ef0cdb728eb112a5049"></a>Mid&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a622d9665594741233bb0fff8de365d68a655d20c1ca69519ca647684edbb2db35" name="a622d9665594741233bb0fff8de365d68a655d20c1ca69519ca647684edbb2db35"></a>High&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a622d9665594741233bb0fff8de365d68af0b44f10edcd3bdee6720430ac4111cd" name="a622d9665594741233bb0fff8de365d68af0b44f10edcd3bdee6720430ac4111cd"></a>VeryHigh&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="adda79d22a92ae152c7e6e121e8e07f8da28d0edd045e05cf5af64e35ae0c4c6ef" name="adda79d22a92ae152c7e6e121e8e07f8da28d0edd045e05cf5af64e35ae0c4c6ef"></a>Low&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda79d22a92ae152c7e6e121e8e07f8da55c6b09cbca39ef0cdb728eb112a5049" name="adda79d22a92ae152c7e6e121e8e07f8da55c6b09cbca39ef0cdb728eb112a5049"></a>Mid&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda79d22a92ae152c7e6e121e8e07f8da655d20c1ca69519ca647684edbb2db35" name="adda79d22a92ae152c7e6e121e8e07f8da655d20c1ca69519ca647684edbb2db35"></a>High&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="adda79d22a92ae152c7e6e121e8e07f8daf0b44f10edcd3bdee6720430ac4111cd" name="adda79d22a92ae152c7e6e121e8e07f8daf0b44f10edcd3bdee6720430ac4111cd"></a>VeryHigh&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d7b/CavernRenderer_8cs_source.html#l00034">34</a> of file <a class="el" href="../../d8/d7b/CavernRenderer_8cs_source.html">CavernRenderer.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d7b/CavernRenderer_8cs_source.html#l00039">39</a> of file <a class="el" href="../../d8/d7b/CavernRenderer_8cs_source.html">CavernRenderer.cs</a>.</p>
 
 </div>
 </div>
@@ -181,6 +197,8 @@ Public Member Functions</h2></td></tr>
 <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a0148e81d317f0781cca5980cbdbc136ba5d9b47bd3b65072e0d5daf55f01da086" name="a0148e81d317f0781cca5980cbdbc136ba5d9b47bd3b65072e0d5daf55f01da086"></a>Mono&#160;</td><td class="fielddoc"></td></tr>
 <tr><td class="fieldname"><a id="a0148e81d317f0781cca5980cbdbc136babbc45d9b35436f5f0ed9e33499efcea9" name="a0148e81d317f0781cca5980cbdbc136babbc45d9b35436f5f0ed9e33499efcea9"></a>Stereo&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0148e81d317f0781cca5980cbdbc136baed187b813f32d975fd98033467d41470" name="a0148e81d317f0781cca5980cbdbc136baed187b813f32d975fd98033467d41470"></a>MonoHeadTracked&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a0148e81d317f0781cca5980cbdbc136ba768d6f25b513f15d82fcbeb2f3454ce2" name="a0148e81d317f0781cca5980cbdbc136ba768d6f25b513f15d82fcbeb2f3454ce2"></a>StereoHeadTracked&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 <p class="definition">Definition at line <a class="el" href="../../d8/d7b/CavernRenderer_8cs_source.html#l00032">32</a> of file <a class="el" href="../../d8/d7b/CavernRenderer_8cs_source.html">CavernRenderer.cs</a>.</p>
@@ -188,6 +206,168 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a id="ae7e9d8e7f306d9d651e93d840c8ba573" name="ae7e9d8e7f306d9d651e93d840c8ba573"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7e9d8e7f306d9d651e93d840c8ba573">&#9670;&#160;</a></span>GetAspectRatio()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Spelunx.CavernRenderer.GetAspectRatio </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d7b/CavernRenderer_8cs_source.html#l00086">86</a> of file <a class="el" href="../../d8/d7b/CavernRenderer_8cs_source.html">CavernRenderer.cs</a>.</p>
+
+</div>
+</div>
+<a id="a062f62440ae875cfb092d115ac8c2664" name="a062f62440ae875cfb092d115ac8c2664"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a062f62440ae875cfb092d115ac8c2664">&#9670;&#160;</a></span>GetCavernAngle()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Spelunx.CavernRenderer.GetCavernAngle </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d7b/CavernRenderer_8cs_source.html#l00082">82</a> of file <a class="el" href="../../d8/d7b/CavernRenderer_8cs_source.html">CavernRenderer.cs</a>.</p>
+
+</div>
+</div>
+<a id="a1828e5d5df6cd43fc22345ed6918c97b" name="a1828e5d5df6cd43fc22345ed6918c97b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1828e5d5df6cd43fc22345ed6918c97b">&#9670;&#160;</a></span>GetCavernElevation()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Spelunx.CavernRenderer.GetCavernElevation </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d7b/CavernRenderer_8cs_source.html#l00083">83</a> of file <a class="el" href="../../d8/d7b/CavernRenderer_8cs_source.html">CavernRenderer.cs</a>.</p>
+
+</div>
+</div>
+<a id="ae83a91249c06f2f47de2fef1463f4774" name="ae83a91249c06f2f47de2fef1463f4774"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae83a91249c06f2f47de2fef1463f4774">&#9670;&#160;</a></span>GetCavernHeight()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Spelunx.CavernRenderer.GetCavernHeight </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d7b/CavernRenderer_8cs_source.html#l00080">80</a> of file <a class="el" href="../../d8/d7b/CavernRenderer_8cs_source.html">CavernRenderer.cs</a>.</p>
+
+</div>
+</div>
+<a id="a93b87c49bc198a66316479cb96be13d5" name="a93b87c49bc198a66316479cb96be13d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a93b87c49bc198a66316479cb96be13d5">&#9670;&#160;</a></span>GetCavernRadius()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">float Spelunx.CavernRenderer.GetCavernRadius </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d7b/CavernRenderer_8cs_source.html#l00081">81</a> of file <a class="el" href="../../d8/d7b/CavernRenderer_8cs_source.html">CavernRenderer.cs</a>.</p>
+
+</div>
+</div>
+<a id="acd2f14729472330f7633813fc424e1c7" name="acd2f14729472330f7633813fc424e1c7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acd2f14729472330f7633813fc424e1c7">&#9670;&#160;</a></span>GetCubemapResolution()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="../../db/d6f/classSpelunx_1_1CavernRenderer.html#adda79d22a92ae152c7e6e121e8e07f8d">CubemapResolution</a> Spelunx.CavernRenderer.GetCubemapResolution </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d7b/CavernRenderer_8cs_source.html#l00077">77</a> of file <a class="el" href="../../d8/d7b/CavernRenderer_8cs_source.html">CavernRenderer.cs</a>.</p>
+
+</div>
+</div>
 <a id="a4a907098979b5ebe098fd1e40b7c7719" name="a4a907098979b5ebe098fd1e40b7c7719"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4a907098979b5ebe098fd1e40b7c7719">&#9670;&#160;</a></span>GetIPD()</h2>
 
@@ -211,7 +391,34 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d7b/CavernRenderer_8cs_source.html#l00071">71</a> of file <a class="el" href="../../d8/d7b/CavernRenderer_8cs_source.html">CavernRenderer.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d7b/CavernRenderer_8cs_source.html#l00079">79</a> of file <a class="el" href="../../d8/d7b/CavernRenderer_8cs_source.html">CavernRenderer.cs</a>.</p>
+
+</div>
+</div>
+<a id="ad1df691b2c8fab76f726d3aca072e96b" name="ad1df691b2c8fab76f726d3aca072e96b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1df691b2c8fab76f726d3aca072e96b">&#9670;&#160;</a></span>GetScreenViewerTexture()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">RenderTexture Spelunx.CavernRenderer.GetScreenViewerTexture </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="../../d8/d7b/CavernRenderer_8cs_source.html#l00084">84</a> of file <a class="el" href="../../d8/d7b/CavernRenderer_8cs_source.html">CavernRenderer.cs</a>.</p>
 
 </div>
 </div>
@@ -238,12 +445,12 @@ Public Member Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="../../d8/d7b/CavernRenderer_8cs_source.html#l00072">72</a> of file <a class="el" href="../../d8/d7b/CavernRenderer_8cs_source.html">CavernRenderer.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="../../d8/d7b/CavernRenderer_8cs_source.html#l00078">78</a> of file <a class="el" href="../../d8/d7b/CavernRenderer_8cs_source.html">CavernRenderer.cs</a>.</p>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
-<li>CAVERN/Packages/com.spelunx.cavern.toolkit/Runtime/Scripts/<a class="el" href="../../d8/d7b/CavernRenderer_8cs_source.html">CavernRenderer.cs</a></li>
+<li>CAVERN/Packages/com.spelunx.cavern.toolkit/Runtime/Scripts/CavernCamera/<a class="el" href="../../d8/d7b/CavernRenderer_8cs_source.html">CavernRenderer.cs</a></li>
 </ul>
 </div><!-- contents -->
 </div><!-- doc-content -->

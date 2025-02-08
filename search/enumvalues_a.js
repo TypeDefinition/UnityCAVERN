@@ -1,5 +1,6 @@
 var searchData=
 [
   ['span_0',['Span',['../dc/df1/namespaceFullscreenEditor.html#adf2a061068678b5ab2760dc7e6486f4da9ce62112cff8eb735d9270c2e285b000',1,'FullscreenEditor']]],
-  ['stereo_1',['Stereo',['../db/d6f/classSpelunx_1_1CavernRenderer.html#a0148e81d317f0781cca5980cbdbc136babbc45d9b35436f5f0ed9e33499efcea9',1,'Spelunx::CavernRenderer']]]
+  ['stereo_1',['Stereo',['../db/d6f/classSpelunx_1_1CavernRenderer.html#a0148e81d317f0781cca5980cbdbc136babbc45d9b35436f5f0ed9e33499efcea9',1,'Spelunx::CavernRenderer']]],
+  ['stereoheadtracked_2',['StereoHeadTracked',['../db/d6f/classSpelunx_1_1CavernRenderer.html#a0148e81d317f0781cca5980cbdbc136ba768d6f25b513f15d82fcbeb2f3454ce2',1,'Spelunx::CavernRenderer']]]
 ];

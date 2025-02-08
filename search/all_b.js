@@ -14,7 +14,7 @@ var searchData=
   ['menuitemhasshortcut_11',['MenuItemHasShortcut',['../dd/d19/classFullscreenEditor_1_1FullscreenUtility.html#abbde2afa17f003b3cab7c4ec1ec8ac30',1,'FullscreenEditor::FullscreenUtility']]],
   ['menuitems_12',['MenuItems',['../df/d28/classFullscreenEditor_1_1MenuItems.html',1,'FullscreenEditor']]],
   ['menuitems_2ecs_13',['MenuItems.cs',['../d1/dc0/MenuItems_8cs.html',1,'']]],
-  ['mid_14',['Mid',['../db/d6f/classSpelunx_1_1CavernRenderer.html#a622d9665594741233bb0fff8de365d68a55c6b09cbca39ef0cdb728eb112a5049',1,'Spelunx::CavernRenderer']]],
+  ['mid_14',['Mid',['../db/d6f/classSpelunx_1_1CavernRenderer.html#adda79d22a92ae152c7e6e121e8e07f8da55c6b09cbca39ef0cdb728eb112a5049',1,'Spelunx::CavernRenderer']]],
   ['milliseconds_15',['Milliseconds',['../dc/d89/classFullscreenEditor_1_1After.html#a6f26c48cbe8d97da9c2ea66e44717749',1,'FullscreenEditor::After']]],
   ['mirroringdriver_16',['MirroringDriver',['../d6/ddb/namespaceFullscreenEditor_1_1Windows.html#ac98cb7e6498b724af014eedfb9c13466a546777f6a40b3c47b42d823b71165dac',1,'FullscreenEditor::Windows']]],
   ['modespruned_17',['ModesPruned',['../d6/ddb/namespaceFullscreenEditor_1_1Windows.html#ac98cb7e6498b724af014eedfb9c13466abb77f1a57b6edec44827571eedc83ff8',1,'FullscreenEditor::Windows']]],
@@ -23,10 +23,11 @@ var searchData=
   ['monitordpitype_20',['MonitorDpiType',['../d6/ddb/namespaceFullscreenEditor_1_1Windows.html#a3fabe7a6037eebf13417fda85ea5b475',1,'FullscreenEditor::Windows']]],
   ['monitorinfoex_21',['MonitorInfoEx',['../d7/d30/structFullscreenEditor_1_1Windows_1_1MonitorInfoEx.html',1,'FullscreenEditor::Windows']]],
   ['mono_22',['Mono',['../db/d6f/classSpelunx_1_1CavernRenderer.html#a0148e81d317f0781cca5980cbdbc136ba5d9b47bd3b65072e0d5daf55f01da086',1,'Spelunx::CavernRenderer']]],
-  ['mosaic_5fpath_23',['MOSAIC_PATH',['../d7/dbe/classFullscreenEditor_1_1Shortcut.html#a11c118cc572a7a74bc8d850890fe4f2c',1,'FullscreenEditor::Shortcut']]],
-  ['mosaicmapping_24',['MosaicMapping',['../d8/d78/classFullscreenEditor_1_1FullscreenPreferences.html#aaf12afcb853ec2fa3ea81418b109d4a3',1,'FullscreenEditor::FullscreenPreferences']]],
-  ['mouseposition_25',['MousePosition',['../dd/d19/classFullscreenEditor_1_1FullscreenUtility.html#a23f38e69250bdfe55a3e241a15d5735f',1,'FullscreenEditor::FullscreenUtility']]],
-  ['movewith_26',['MoveWith',['../d7/d6e/classMoveWith.html',1,'']]],
-  ['movewith_2ecs_27',['MoveWith.cs',['../db/d17/MoveWith_8cs.html',1,'']]],
-  ['multidriver_28',['MultiDriver',['../d6/ddb/namespaceFullscreenEditor_1_1Windows.html#ac98cb7e6498b724af014eedfb9c13466adc4524f3ebf041e76e96461d41989f7d',1,'FullscreenEditor::Windows']]]
+  ['monoheadtracked_23',['MonoHeadTracked',['../db/d6f/classSpelunx_1_1CavernRenderer.html#a0148e81d317f0781cca5980cbdbc136baed187b813f32d975fd98033467d41470',1,'Spelunx::CavernRenderer']]],
+  ['mosaic_5fpath_24',['MOSAIC_PATH',['../d7/dbe/classFullscreenEditor_1_1Shortcut.html#a11c118cc572a7a74bc8d850890fe4f2c',1,'FullscreenEditor::Shortcut']]],
+  ['mosaicmapping_25',['MosaicMapping',['../d8/d78/classFullscreenEditor_1_1FullscreenPreferences.html#aaf12afcb853ec2fa3ea81418b109d4a3',1,'FullscreenEditor::FullscreenPreferences']]],
+  ['mouseposition_26',['MousePosition',['../dd/d19/classFullscreenEditor_1_1FullscreenUtility.html#a23f38e69250bdfe55a3e241a15d5735f',1,'FullscreenEditor::FullscreenUtility']]],
+  ['movewith_27',['MoveWith',['../d7/d6e/classMoveWith.html',1,'']]],
+  ['movewith_2ecs_28',['MoveWith.cs',['../db/d17/MoveWith_8cs.html',1,'']]],
+  ['multidriver_29',['MultiDriver',['../d6/ddb/namespaceFullscreenEditor_1_1Windows.html#ac98cb7e6498b724af014eedfb9c13466adc4524f3ebf041e76e96461d41989f7d',1,'FullscreenEditor::Windows']]]
 ];

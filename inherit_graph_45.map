@@ -1,6 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" title=" " alt="" coords="5,35,135,60"/>
-<area shape="rect" id="node2" href="$da/dd0/classFullscreenEditor_1_1FullscreenContainer.html" title="Manages the WindowContainers, Views and Windows that will be fullscreened." alt="" coords="183,27,377,67"/>
-<area shape="rect" id="node3" href="$db/ddb/classFullscreenEditor_1_1FullscreenView.html" title=" " alt="" coords="425,5,652,31"/>
-<area shape="rect" id="node4" href="$db/df0/classFullscreenEditor_1_1FullscreenWindow.html" title=" " alt="" coords="441,55,636,95"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,55,129,80"/>
+<area shape="rect" id="node2" href="$d7/d6e/classMoveWith.html" title=" " alt="" coords="240,5,328,31"/>
+<area shape="rect" id="node3" href="$db/d6f/classSpelunx_1_1CavernRenderer.html" title=" " alt="" coords="193,55,375,80"/>
+<area shape="rect" id="node4" href="$d3/dc5/classSpelunx_1_1CavernScreenViewer.html" title=" " alt="" coords="177,104,391,129"/>
 </map>
