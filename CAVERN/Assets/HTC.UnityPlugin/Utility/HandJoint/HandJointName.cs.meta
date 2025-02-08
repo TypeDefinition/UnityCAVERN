@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: f478c368a43d44541984b8abaafb7c77
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/Utility/HandJoint/HandJointName.cs
+  uploadId: 713673

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8d2435df2508a1048b42248ac6d63074
+timeCreated: 1490087571
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Materials/GuideLineYellow.mat
+  uploadId: 713673

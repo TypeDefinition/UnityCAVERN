@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b9a9a167dab56c2458daea76c851f6e5
+timeCreated: 1496158033
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelViveBaseStation.prefab
+  uploadId: 713673

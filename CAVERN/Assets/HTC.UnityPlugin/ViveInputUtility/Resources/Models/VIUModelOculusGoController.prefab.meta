@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: eb81d87d3b9a20e42976d9e6fdff48a4
+timeCreated: 1533626127
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelOculusGoController.prefab
+  uploadId: 713673

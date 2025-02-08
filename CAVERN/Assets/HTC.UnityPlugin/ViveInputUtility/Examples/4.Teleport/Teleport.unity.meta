@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 13596d03f1830884d93aa9d4521226f7
+timeCreated: 1465271187
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Examples/4.Teleport/Teleport.unity
+  uploadId: 713673

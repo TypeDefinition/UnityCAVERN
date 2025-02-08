@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d04bfb194154ee0429d99c72421537a4
+timeCreated: 1620865509
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/TooltipRig/VIUTooltipRigOculusQuestOrRiftSControllerRight.asset
+  uploadId: 713673

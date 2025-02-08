@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fb9aa177fa87fc44d831255bf057c139
+timeCreated: 1496158025
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelOculusTouchRight.prefab
+  uploadId: 713673

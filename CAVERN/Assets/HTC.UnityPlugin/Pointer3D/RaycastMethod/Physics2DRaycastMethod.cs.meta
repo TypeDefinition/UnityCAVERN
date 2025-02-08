@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 7ceb8992058aca84bbc9c5ad19fd776f
+timeCreated: 1461917582
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/Pointer3D/RaycastMethod/Physics2DRaycastMethod.cs
+  uploadId: 713673

@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: d518a00ceacb57f4d94b3cc806d60f40
+timeCreated: 1465272771
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/Pointer3D/RaycastMethod/CanvasRaycastTarget.cs
+  uploadId: 713673

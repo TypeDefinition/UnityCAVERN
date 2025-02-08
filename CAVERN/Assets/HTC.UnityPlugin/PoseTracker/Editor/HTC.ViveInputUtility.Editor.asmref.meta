@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 8a09112b28a3f254f9f4b7b4bce36848
+AssemblyDefinitionReferenceImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/PoseTracker/Editor/HTC.ViveInputUtility.Editor.asmref
+  uploadId: 713673

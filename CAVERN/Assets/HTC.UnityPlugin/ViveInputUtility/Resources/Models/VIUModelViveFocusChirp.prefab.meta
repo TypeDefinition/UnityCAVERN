@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e4923ecd69927e647a68c24ca7ebc44b
+timeCreated: 1592905042
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelViveFocusChirp.prefab
+  uploadId: 713673

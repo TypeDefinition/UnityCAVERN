@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 9056320bb10a21a4782b8dbfe5870461
+timeCreated: 1605673722
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelWaveLegacyTrackedHandLeft.prefab
+  uploadId: 713673

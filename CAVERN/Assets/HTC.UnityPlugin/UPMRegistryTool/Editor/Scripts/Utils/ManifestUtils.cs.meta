@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 0c37116a629e2794dbf195fb65b30d0d
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/UPMRegistryTool/Editor/Scripts/Utils/ManifestUtils.cs
+  uploadId: 713673

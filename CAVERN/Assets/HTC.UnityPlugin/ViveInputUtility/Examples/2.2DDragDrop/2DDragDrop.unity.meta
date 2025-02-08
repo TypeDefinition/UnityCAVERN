@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 4d7dd75b69ca62047b4dc731bed6f99c
+timeCreated: 1465213689
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Examples/2.2DDragDrop/2DDragDrop.unity
+  uploadId: 713673

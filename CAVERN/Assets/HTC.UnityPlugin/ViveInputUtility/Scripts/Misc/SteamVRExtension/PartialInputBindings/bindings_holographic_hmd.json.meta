@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 568ed493229001f46974af3fcc6f661e
+timeCreated: 1544604280
+licenseType: Store
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/Misc/SteamVRExtension/PartialInputBindings/bindings_holographic_hmd.json
+  uploadId: 713673

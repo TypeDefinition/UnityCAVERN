@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c31cdc02bae28ae49b0fc79797ffaa44
+timeCreated: 1605769664
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Examples/8.NearFieldHandInteraction/Prefabs/TouchSlider.prefab
+  uploadId: 713673

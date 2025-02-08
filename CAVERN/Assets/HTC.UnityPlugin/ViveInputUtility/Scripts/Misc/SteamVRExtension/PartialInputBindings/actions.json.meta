@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 05ca4e26fdf42724dacba2c263f97647
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/Misc/SteamVRExtension/PartialInputBindings/actions.json
+  uploadId: 713673

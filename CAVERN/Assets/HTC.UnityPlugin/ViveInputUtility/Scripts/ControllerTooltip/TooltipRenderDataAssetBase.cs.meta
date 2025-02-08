@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 19a7a1b205bdb124c9eb8fddf899138d
+timeCreated: 1611828709
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ControllerTooltip/TooltipRenderDataAssetBase.cs
+  uploadId: 713673

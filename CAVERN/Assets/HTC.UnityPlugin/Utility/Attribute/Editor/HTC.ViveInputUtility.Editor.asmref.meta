@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 7c59746feab6478458c3ba556c57b31e
+AssemblyDefinitionReferenceImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/Utility/Attribute/Editor/HTC.ViveInputUtility.Editor.asmref
+  uploadId: 713673

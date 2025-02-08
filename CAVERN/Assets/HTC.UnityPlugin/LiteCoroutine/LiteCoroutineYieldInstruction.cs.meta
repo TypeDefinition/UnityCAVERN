@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: b4539c40cfd27d64186f3d66833b1e5f
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/LiteCoroutine/LiteCoroutineYieldInstruction.cs
+  uploadId: 713673

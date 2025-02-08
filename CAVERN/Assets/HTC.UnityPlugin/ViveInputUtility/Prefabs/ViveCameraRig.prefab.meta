@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cb3370c18187bb444b240cfb08dcc02f
+timeCreated: 1495996627
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Prefabs/ViveCameraRig.prefab
+  uploadId: 713673

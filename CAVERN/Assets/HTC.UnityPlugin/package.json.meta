@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 1d1be50e3d4aa6a4a8304b2f8d592186
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/package.json
+  uploadId: 713673

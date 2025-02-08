@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: bc4e44a3b6c99684384abd378f45e9fe
+timeCreated: 1489399830
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Examples/7.RoleBindingExample/RoleBindingExample.unity
+  uploadId: 713673

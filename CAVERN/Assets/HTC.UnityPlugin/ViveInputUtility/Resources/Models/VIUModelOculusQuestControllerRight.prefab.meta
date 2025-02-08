@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0679ffce1bdb106408aacc4412fd0b4b
+timeCreated: 1558956115
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelOculusQuestControllerRight.prefab
+  uploadId: 713673

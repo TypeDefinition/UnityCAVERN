@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 179baae881749d24399a1d0d8e294181
+timeCreated: 1477988356
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Examples/Shared/Materials/Floor.mat
+  uploadId: 713673

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: a8b466cf32c6b7a49832b2d706b33923
+timeCreated: 1496157992
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelViveTracker.prefab
+  uploadId: 713673

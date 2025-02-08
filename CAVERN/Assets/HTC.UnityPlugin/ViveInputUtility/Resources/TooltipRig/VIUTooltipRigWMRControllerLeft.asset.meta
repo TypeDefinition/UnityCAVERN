@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 28e8a30a90ab2d14cb1f32f0f9ccb2e0
+timeCreated: 1620865450
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/TooltipRig/VIUTooltipRigWMRControllerLeft.asset
+  uploadId: 713673

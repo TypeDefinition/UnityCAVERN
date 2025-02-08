@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0f65a9611783f2146aed73d389665508
+timeCreated: 1620864999
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/TooltipRig/VIUTooltipRigIndexControllerLeft.asset
+  uploadId: 713673

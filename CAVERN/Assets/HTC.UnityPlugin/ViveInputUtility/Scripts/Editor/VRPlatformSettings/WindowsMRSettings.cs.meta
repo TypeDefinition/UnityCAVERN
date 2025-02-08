@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 652f26e9284c9984e8376e0f98db47dd
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/Editor/VRPlatformSettings/WindowsMRSettings.cs
+  uploadId: 713673

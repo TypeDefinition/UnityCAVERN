@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 9e9f91441a2f9e046a588efe5b089830
+timeCreated: 1478185598
+licenseType: Store
+ShaderImporter:
+  defaultTextures: []
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Unlit-AlphaWithFade.shader
+  uploadId: 713673

@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 54700b8b41e967244be6803d06dadfb0
+timeCreated: 1487416736
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ViveRole/ViveRoleEnum.cs
+  uploadId: 713673

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b8c527c7a697ee4408daa3ef17b495bb
+timeCreated: 1477988403
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Examples/Shared/Materials/DiceRed.mat
+  uploadId: 713673

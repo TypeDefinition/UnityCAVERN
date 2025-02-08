@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 189738cec75073140ab3a8f043e47f7c
+timeCreated: 1505209670
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/VIUExCamConfigInterface.prefab
+  uploadId: 713673

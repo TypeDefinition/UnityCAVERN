@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: f3af8081dcf19ca41b1fbabc1ade9660
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/VIUSettingsPartials/ExternalCameraSettings.cs
+  uploadId: 713673

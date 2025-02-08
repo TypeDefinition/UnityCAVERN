@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 2ea444548ca136c4db1faed2c0336bb1
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/PoseTracker/PoseModifiers/PoseDirection.cs
+  uploadId: 713673

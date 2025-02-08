@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c7eebf4782ce6334882e1ed849de995a
+timeCreated: 1605769148
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Examples/8.NearFieldHandInteraction/Prefabs/PushButton.prefab
+  uploadId: 713673

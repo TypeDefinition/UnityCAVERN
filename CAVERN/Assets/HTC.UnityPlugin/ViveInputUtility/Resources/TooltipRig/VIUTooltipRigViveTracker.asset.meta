@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 752da3c73ed16464ebc1396c0e129682
+timeCreated: 1620865187
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/TooltipRig/VIUTooltipRigViveTracker.asset
+  uploadId: 713673

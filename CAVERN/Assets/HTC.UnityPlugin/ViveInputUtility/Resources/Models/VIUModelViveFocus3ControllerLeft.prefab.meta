@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fbb008dd14c00bf48b4606451eedd3e6
+timeCreated: 1638442833
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelViveFocus3ControllerLeft.prefab
+  uploadId: 713673

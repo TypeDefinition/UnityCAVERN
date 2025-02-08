@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3b5faf5684d1b7b4e953f52dfd5badfa
+timeCreated: 1620865331
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/TooltipRig/VIUTooltipRigOculusTouchLeft.asset
+  uploadId: 713673

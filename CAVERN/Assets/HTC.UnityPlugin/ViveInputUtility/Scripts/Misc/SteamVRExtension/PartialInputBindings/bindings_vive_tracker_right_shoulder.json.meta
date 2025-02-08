@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: a794b595f8c3fb84e9c7fdc7d122e7a5
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/Misc/SteamVRExtension/PartialInputBindings/bindings_vive_tracker_right_shoulder.json
+  uploadId: 713673

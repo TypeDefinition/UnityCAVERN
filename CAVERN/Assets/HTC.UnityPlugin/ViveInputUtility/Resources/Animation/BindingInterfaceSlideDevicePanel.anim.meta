@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: bff4c2ba27c810d4789a4796b78ff5df
+timeCreated: 1502175093
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Animation/BindingInterfaceSlideDevicePanel.anim
+  uploadId: 713673

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2c7da1fafce324640841c7b80fb2327a
+timeCreated: 1605758060
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Examples/8.NearFieldHandInteraction/NearFieldHandInteraction.unity
+  uploadId: 713673

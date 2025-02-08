@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: c066a9805efda9045abe5b8b880e9ad5
+timeCreated: 1461917098
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/Pointer3D/RaycastMethod/Base/BaseRaycastMethod.cs
+  uploadId: 713673

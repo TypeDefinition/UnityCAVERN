@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cbfd31aaac017204885fcc03f0579a1a
+timeCreated: 1482400087
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Prefabs/ViveRig.prefab
+  uploadId: 713673

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ce84185c8ba60394c84a54b4fe34af8f
+timeCreated: 1465212388
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Examples/3.3DDrag/3DDrag.unity
+  uploadId: 713673

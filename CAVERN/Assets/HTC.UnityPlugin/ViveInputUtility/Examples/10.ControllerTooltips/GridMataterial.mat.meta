@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ef9706aad694cbe47b4bbba6ed12b241
+timeCreated: 1611771589
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Examples/10.ControllerTooltips/GridMataterial.mat
+  uploadId: 713673

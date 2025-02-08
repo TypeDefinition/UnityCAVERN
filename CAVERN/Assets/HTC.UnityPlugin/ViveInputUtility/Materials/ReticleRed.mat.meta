@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 50143b523bb80ca4696e4d922443e44f
+timeCreated: 1527229240
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Materials/ReticleRed.mat
+  uploadId: 713673

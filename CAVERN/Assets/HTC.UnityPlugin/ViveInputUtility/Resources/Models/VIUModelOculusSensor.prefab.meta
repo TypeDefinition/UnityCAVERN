@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2c2099480c1b09b49b123ba87f48456c
+timeCreated: 1496158010
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelOculusSensor.prefab
+  uploadId: 713673

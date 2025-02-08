@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 16e58087e8cae74458175a04c1e2f587
+timeCreated: 1458793137
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Examples/3.3DDrag/Materials/grid.mat
+  uploadId: 713673

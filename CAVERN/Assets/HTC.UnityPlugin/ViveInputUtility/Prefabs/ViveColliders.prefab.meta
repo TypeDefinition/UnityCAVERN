@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 2b3a4efa04a7cf2428e0835b20f15fdc
+timeCreated: 1477968007
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Prefabs/ViveColliders.prefab
+  uploadId: 713673

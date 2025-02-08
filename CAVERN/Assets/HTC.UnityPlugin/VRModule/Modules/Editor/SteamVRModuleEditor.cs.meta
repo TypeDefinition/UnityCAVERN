@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: de219d81bd5f2054fb730d1e02ca64dc
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/VRModule/Modules/Editor/SteamVRModuleEditor.cs
+  uploadId: 713673

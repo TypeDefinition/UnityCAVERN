@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e568c2d9060754a409b5cc294cd3a79f
+timeCreated: 1499860900
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelKnucklesLeft.prefab
+  uploadId: 713673

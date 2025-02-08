@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 21bf257714e0af3479999f6dae0e5ecf
+timeCreated: 1620865288
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/TooltipRig/VIUTooltipRigKnucklesLeft.asset
+  uploadId: 713673

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ca26ded647478c54ea819cd0ef664904
+timeCreated: 1502160869
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Animation/BindingInterfaceSlideRoleSetPanel.anim
+  uploadId: 713673

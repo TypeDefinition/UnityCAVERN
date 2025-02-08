@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 1ae3cbaf7eb82324db91077381b3f903
+timeCreated: 1506933822
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/VRModule/Modules/WaveVRModule.cs
+  uploadId: 713673

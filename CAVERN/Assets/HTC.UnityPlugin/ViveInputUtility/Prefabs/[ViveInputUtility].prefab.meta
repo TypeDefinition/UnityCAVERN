@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8075b10b3fa5b5b45bc02a03074b8b95
+timeCreated: 1503401655
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Prefabs/[ViveInputUtility].prefab
+  uploadId: 713673

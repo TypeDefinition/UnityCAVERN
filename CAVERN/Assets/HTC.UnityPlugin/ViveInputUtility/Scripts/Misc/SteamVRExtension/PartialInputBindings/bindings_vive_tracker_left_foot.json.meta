@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: d47107b41e98733459b6f0bcd9a6cf2f
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/Misc/SteamVRExtension/PartialInputBindings/bindings_vive_tracker_left_foot.json
+  uploadId: 713673

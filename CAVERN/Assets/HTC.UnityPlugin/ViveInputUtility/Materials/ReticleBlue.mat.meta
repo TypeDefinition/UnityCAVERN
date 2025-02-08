@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 0d9c67bc6dc42434eb69a9a019c712f1
+timeCreated: 1605672176
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Materials/ReticleBlue.mat
+  uploadId: 713673

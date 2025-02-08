@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 38c5f53e7f1806a4a9fc159718f63db0
+timeCreated: 1477988297
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Examples/Shared/Materials/HighlightColor.mat
+  uploadId: 713673

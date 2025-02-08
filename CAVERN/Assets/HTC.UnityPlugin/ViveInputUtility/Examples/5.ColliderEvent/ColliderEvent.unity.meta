@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d8120628a3b4fb84eb121a883bc093a6
+timeCreated: 1478002736
+licenseType: Store
+DefaultImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Examples/5.ColliderEvent/ColliderEvent.unity
+  uploadId: 713673

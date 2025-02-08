@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: d43326885e62c5d43a7753e075cadf56
+timeCreated: 1608694833
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Resources/Models/VIUModelSteamVRSkeletonLeft.prefab
+  uploadId: 713673

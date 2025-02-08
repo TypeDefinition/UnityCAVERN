@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: fad3f706a426dcc4191977969b488dfc
+timeCreated: 1611201987
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/ViveInputUtility/Scripts/ControllerTooltip/DefaultTooltipRenderDataSample.asset
+  uploadId: 713673

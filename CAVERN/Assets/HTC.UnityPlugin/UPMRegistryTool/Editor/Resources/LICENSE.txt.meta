@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 30a388c747510234e8bd178bfb8d84b7
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 64219
+  packageName: VIVE Input Utility
+  packageVersion: 1.20.0
+  assetPath: Assets/HTC.UnityPlugin/UPMRegistryTool/Editor/Resources/LICENSE.txt
+  uploadId: 713673
