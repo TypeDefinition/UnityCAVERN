@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using Valve.VR;
 
-namespace OVRT
+namespace Spelunx.OVRT
 {
     public sealed class ViveTracker : OVRT_TrackedDevice
     {

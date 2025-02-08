@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 using Valve.VR;
 using UnityEngine.Events;
 
-namespace OVRT
+namespace Spelunx.OVRT
 {
     [ExecuteInEditMode]
     public class OVRT_RenderModel : MonoBehaviour

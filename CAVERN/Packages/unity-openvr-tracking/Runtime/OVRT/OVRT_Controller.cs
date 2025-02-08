@@ -3,9 +3,9 @@ using System.Reflection;
 using UnityEngine;
 using UnityEngine.Events;
 using Valve.VR;
-using static OVRT.OVRT_TrackedObject;
+using static Spelunx.OVRT.OVRT_TrackedObject;
 
-namespace OVRT
+namespace Spelunx.OVRT
 {
     public sealed class OVRT_Controller : OVRT_TrackedDevice
     {
@@ -29,9 +29,9 @@ namespace OVRT
                 return;
 
             if (OpenVR.System == null) return;
-            
+
             var axisId = (uint)buttonId - (uint)EVRButtonId.k_EButton_Axis0;
-            OpenVR.System.TriggerHapticPulse((uint)DeviceIndex, axisId, (char)durationMicroSec);           
+            OpenVR.System.TriggerHapticPulse((uint)DeviceIndex, axisId, (char)durationMicroSec);
         }
 
 
@@ -40,7 +40,7 @@ namespace OVRT
             if (OpenVR.System == null) return;
 
             var roleIndex = FindIndexForRole();
-            
+
             if (roleIndex > -1)
             {
                 IsConnected = connected;
@@ -110,11 +110,11 @@ namespace OVRT
             }
         }
 
-        private void OnButtonPressed(int index, EVRButtonId button, bool pressed) 
+        private void OnButtonPressed(int index, EVRButtonId button, bool pressed)
         {
             if (index == DeviceIndex)
             {
-                onButtonPressed.Invoke(button, pressed);    
+                onButtonPressed.Invoke(button, pressed);
             }
         }
 
@@ -123,7 +123,7 @@ namespace OVRT
             _onNewPosesAction += OnNewPoses;
             _onButtonPressedAction += OnButtonPressed;
             _onDeviceConnectedAction += OnDeviceConnected;
-            _onTrackedDeviceRoleChangedAction += OnTrackedDeviceRoleChanged;    
+            _onTrackedDeviceRoleChangedAction += OnTrackedDeviceRoleChanged;
         }
 
         private void Start()
@@ -145,7 +145,7 @@ namespace OVRT
         {
             OVRT_Events.NewPoses.RemoveListener(_onNewPosesAction);
             OVRT_Events.ButtonPressed.RemoveListener(_onButtonPressedAction);
-            OVRT_Events.TrackedDeviceConnected.RemoveListener(_onDeviceConnectedAction);    
+            OVRT_Events.TrackedDeviceConnected.RemoveListener(_onDeviceConnectedAction);
             IsValid = false;
             IsConnected = false;
         }

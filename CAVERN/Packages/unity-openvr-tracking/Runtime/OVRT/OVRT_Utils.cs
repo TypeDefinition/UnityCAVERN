@@ -1,10 +1,10 @@
 using UnityEngine;
 using Valve.VR;
 
-namespace OVRT
+namespace Spelunx.OVRT
 {
-    public static class OVRT_Utils
-    {
+	public static class OVRT_Utils
+	{
 		[System.Serializable]
 		public struct RigidTransform
 		{
