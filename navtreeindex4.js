@@ -1,9 +1,5 @@
 var NAVTREEINDEX4 =
 {
-"df/d81/classFullscreenEditor_1_1Windows_1_1User32.html#a3a6bc30926b6274054448d48bfcf0f34":[3,0,0,1,6,7],
-"df/d81/classFullscreenEditor_1_1Windows_1_1User32.html#a4362c769b0897d4d91523bcf316445cd":[2,0,0,1,6,3],
-"df/d81/classFullscreenEditor_1_1Windows_1_1User32.html#a4362c769b0897d4d91523bcf316445cd":[3,0,0,1,6,3],
-"df/d81/classFullscreenEditor_1_1Windows_1_1User32.html#a96a0070331741b5b59b3ca5e4bc5a83d":[3,0,0,1,6,4],
 "df/d81/classFullscreenEditor_1_1Windows_1_1User32.html#a96a0070331741b5b59b3ca5e4bc5a83d":[2,0,0,1,6,4],
 "df/d81/classFullscreenEditor_1_1Windows_1_1User32.html#ab5e1ebb2b289be8540a534f0d73428f0":[3,0,0,1,6,0],
 "df/d81/classFullscreenEditor_1_1Windows_1_1User32.html#ab5e1ebb2b289be8540a534f0d73428f0":[2,0,0,1,6,0],

@@ -9,6 +9,5 @@ var searchData=
   ['mirroringdriver_6',['MirroringDriver',['../d6/ddb/namespaceFullscreenEditor_1_1Windows.html#ac98cb7e6498b724af014eedfb9c13466a546777f6a40b3c47b42d823b71165dac',1,'FullscreenEditor::Windows']]],
   ['modespruned_7',['ModesPruned',['../d6/ddb/namespaceFullscreenEditor_1_1Windows.html#ac98cb7e6498b724af014eedfb9c13466abb77f1a57b6edec44827571eedc83ff8',1,'FullscreenEditor::Windows']]],
   ['mono_8',['Mono',['../db/d6f/classSpelunx_1_1CavernRenderer.html#a0148e81d317f0781cca5980cbdbc136ba5d9b47bd3b65072e0d5daf55f01da086',1,'Spelunx::CavernRenderer']]],
-  ['monoheadtracked_9',['MonoHeadTracked',['../db/d6f/classSpelunx_1_1CavernRenderer.html#a0148e81d317f0781cca5980cbdbc136baed187b813f32d975fd98033467d41470',1,'Spelunx::CavernRenderer']]],
-  ['multidriver_10',['MultiDriver',['../d6/ddb/namespaceFullscreenEditor_1_1Windows.html#ac98cb7e6498b724af014eedfb9c13466adc4524f3ebf041e76e96461d41989f7d',1,'FullscreenEditor::Windows']]]
+  ['multidriver_9',['MultiDriver',['../d6/ddb/namespaceFullscreenEditor_1_1Windows.html#ac98cb7e6498b724af014eedfb9c13466adc4524f3ebf041e76e96461d41989f7d',1,'FullscreenEditor::Windows']]]
 ];

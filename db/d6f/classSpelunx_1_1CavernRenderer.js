@@ -8,9 +8,7 @@ var classSpelunx_1_1CavernRenderer =
     ] ],
     [ "StereoscopicMode", "db/d6f/classSpelunx_1_1CavernRenderer.html#a0148e81d317f0781cca5980cbdbc136b", [
       [ "Mono", "db/d6f/classSpelunx_1_1CavernRenderer.html#a0148e81d317f0781cca5980cbdbc136ba5d9b47bd3b65072e0d5daf55f01da086", null ],
-      [ "Stereo", "db/d6f/classSpelunx_1_1CavernRenderer.html#a0148e81d317f0781cca5980cbdbc136babbc45d9b35436f5f0ed9e33499efcea9", null ],
-      [ "MonoHeadTracked", "db/d6f/classSpelunx_1_1CavernRenderer.html#a0148e81d317f0781cca5980cbdbc136baed187b813f32d975fd98033467d41470", null ],
-      [ "StereoHeadTracked", "db/d6f/classSpelunx_1_1CavernRenderer.html#a0148e81d317f0781cca5980cbdbc136ba768d6f25b513f15d82fcbeb2f3454ce2", null ]
+      [ "Stereo", "db/d6f/classSpelunx_1_1CavernRenderer.html#a0148e81d317f0781cca5980cbdbc136babbc45d9b35436f5f0ed9e33499efcea9", null ]
     ] ],
     [ "GetAspectRatio", "db/d6f/classSpelunx_1_1CavernRenderer.html#ae7e9d8e7f306d9d651e93d840c8ba573", null ],
     [ "GetCavernAngle", "db/d6f/classSpelunx_1_1CavernRenderer.html#a062f62440ae875cfb092d115ac8c2664", null ],
