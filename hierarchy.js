@@ -45,9 +45,9 @@ var hierarchy =
     [ "MonoBehaviour", null, [
       [ "EvasiveMotion", "d3/d28/classEvasiveMotion.html", null ],
       [ "MotionMirrorer", "de/dee/classMotionMirrorer.html", null ],
-      [ "MoveWith", "d7/d6e/classMoveWith.html", null ],
       [ "Spelunx.CavernRenderer", "db/d6f/classSpelunx_1_1CavernRenderer.html", null ],
-      [ "Spelunx.CavernScreenViewer", "d3/dc5/classSpelunx_1_1CavernScreenViewer.html", null ]
+      [ "Spelunx.CavernScreenViewer", "d3/dc5/classSpelunx_1_1CavernScreenViewer.html", null ],
+      [ "Spelunx.MoveWith", "df/d00/classSpelunx_1_1MoveWith.html", null ]
     ] ],
     [ "FullscreenEditor.Linux.NativeFullscreenHooks", "da/d86/classFullscreenEditor_1_1Linux_1_1NativeFullscreenHooks.html", null ],
     [ "FullscreenEditor.Windows.NativeRect", "d1/d4d/structFullscreenEditor_1_1Windows_1_1NativeRect.html", null ],

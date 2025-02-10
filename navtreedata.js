@@ -60,9 +60,9 @@ var NAVTREEINDEX =
 [
 "annotated.html",
 "d3/dd5/classFullscreenEditor_1_1Fullscreen.html#a910d6fdbade91dfe6530f3ffa889a787",
-"d7/dbe/classFullscreenEditor_1_1Shortcut.html#a86147efda868ea6afcb6cc19fa5e3ee7",
-"db/db3/CavernScreenViewerInspector_8cs.html",
-"df/d81/classFullscreenEditor_1_1Windows_1_1User32.html#a14cc6b759a02eea7d639f18e11f6baf2"
+"d7/dbe/classFullscreenEditor_1_1Shortcut.html#a96d4f093137a025215cd32c68485023a",
+"db/ddb/classFullscreenEditor_1_1FullscreenView.html",
+"df/d81/classFullscreenEditor_1_1Windows_1_1User32.html#a13346b6aaa1988ab8a07df60125139a7"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
