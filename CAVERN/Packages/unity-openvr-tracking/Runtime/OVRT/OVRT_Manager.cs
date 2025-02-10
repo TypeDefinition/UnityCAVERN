@@ -206,6 +206,14 @@ namespace Spelunx.OVRT
         private void OnDestroy()
         {
             OpenVR.Shutdown();
+
+            _vrSystem = null;
+        }
+
+        void OnApplicationQuit()
+        {
+            OpenVR.Shutdown();
+            _vrSystem = null;
         }
 
         private void Update()
