@@ -18,7 +18,7 @@ namespace Spelunx {
 
         private void Start() {
         }
-
+        
         private void Update() {
         }
 

@@ -32,8 +32,6 @@ namespace Spelunx {
         public enum StereoscopicMode {
             Mono,
             Stereo,
-            MonoHeadTracked,
-            StereoHeadTracked,
         }
 
         public enum CubemapResolution {
@@ -66,8 +64,9 @@ namespace Spelunx {
         [SerializeField, Range(-1.0f, 1.0f)] private float cavernElevation = 0.0f; // Cavern physical screen elevation off the floor in metres.
 
         [Header("References")]
+        [SerializeField] private Transform head;
+        [SerializeField] private Camera eye;
         [SerializeField] private Shader shader;
-        [SerializeField] private Camera captureCamera;
 
         private RenderTexture[] cubemaps;
         private RenderTexture screenViewerTexture;
@@ -110,7 +109,7 @@ namespace Spelunx {
                 cubemaps[i].wrapMode = TextureWrapMode.Clamp;
             }
 
-            screenViewerTexture = new RenderTexture(1024, 1024, 32, RenderTextureFormat.ARGB32); // Use a low resolution to minimise performance affected by debugging.
+            screenViewerTexture = new RenderTexture(512, 512, 32, RenderTextureFormat.ARGB32); // Use a low resolution to minimise performance affected by debugging.
             screenViewerTexture.dimension = TextureDimension.Tex2D;
             screenViewerTexture.wrapMode = TextureWrapMode.Clamp;
 
@@ -148,38 +147,41 @@ namespace Spelunx {
             const int backMask = 1 << (int)CubemapFace.NegativeZ;
             const int allMask = leftMask | rightMask | topMask | bottomMask | frontMask | backMask;
 
+            // Use Camera.MonoOrStereoscopicEye.Left or Camera.MonoOrStereoscopicEye.Right to ensure that the cubemap follows the camera's rotation.
+            // Camera.MonoOrStereoscopicEye.Mono renders the cubemap to be aligned to the world's axes instead.
             switch (stereoMode) {
                 case StereoscopicMode.Mono:
-                    captureCamera.stereoSeparation = 0.0f;
-                    captureCamera.transform.localPosition = Vector3.zero;
-                    captureCamera.transform.localRotation = Quaternion.identity;
-
-                    // Use Camera.MonoOrStereoscopicEye.Left or Camera.MonoOrStereoscopicEye.Right to ensure that the cubemap follows the camera's rotation.
-                    // Camera.MonoOrStereoscopicEye.Mono renders the cubemap to be aligned to the world's axes instead.
-                    captureCamera.RenderToCubemap(cubemaps[(int)CubemapIndex.Mono], frontMask | leftMask | rightMask, Camera.MonoOrStereoscopicEye.Left);
+                    eye.stereoSeparation = 0.0f;
+                    eye.transform.localPosition = Vector3.zero;
+                    eye.transform.localRotation = Quaternion.identity;
+                    eye.RenderToCubemap(cubemaps[(int)CubemapIndex.Mono], allMask | frontMask | leftMask | rightMask, Camera.MonoOrStereoscopicEye.Left);
                     break;
                 case StereoscopicMode.Stereo:
-                    // captureCamera.stereoSeparation = interpupillaryDistance;
-                    captureCamera.stereoSeparation = 0.0f;
-                    captureCamera.transform.localRotation = Quaternion.identity;
-                    captureCamera.transform.localPosition = new Vector3(-interpupillaryDistance * 0.5f, 0.0f, 0.0f);
-                    captureCamera.RenderToCubemap(cubemaps[(int)CubemapIndex.Left], frontMask, Camera.MonoOrStereoscopicEye.Left);
-                    captureCamera.transform.localPosition = new Vector3(interpupillaryDistance * 0.5f, 0.0f, 0.0f);
-                    captureCamera.RenderToCubemap(cubemaps[(int)CubemapIndex.Right], frontMask, Camera.MonoOrStereoscopicEye.Right);
-                    captureCamera.transform.localPosition = new Vector3(0.0f, 0.0f, interpupillaryDistance * 0.5f);
-                    captureCamera.RenderToCubemap(cubemaps[(int)CubemapIndex.Front], leftMask | rightMask, Camera.MonoOrStereoscopicEye.Left);
-                    captureCamera.transform.localPosition = new Vector3(0.0f, 0.0f, -interpupillaryDistance * 0.5f);
-                    captureCamera.RenderToCubemap(cubemaps[(int)CubemapIndex.Back], leftMask | rightMask, Camera.MonoOrStereoscopicEye.Right);
-                    captureCamera.transform.localPosition = Vector3.zero;
+                    // eye.stereoSeparation = interpupillaryDistance;
+                    eye.stereoSeparation = 0.0f;
+                    eye.transform.localRotation = Quaternion.identity;
+                    eye.transform.localPosition = new Vector3(-interpupillaryDistance * 0.5f, 0.0f, 0.0f);
+                    eye.RenderToCubemap(cubemaps[(int)CubemapIndex.Left], allMask | frontMask, Camera.MonoOrStereoscopicEye.Left);
+                    eye.transform.localPosition = new Vector3(interpupillaryDistance * 0.5f, 0.0f, 0.0f);
+                    eye.RenderToCubemap(cubemaps[(int)CubemapIndex.Right], allMask | frontMask, Camera.MonoOrStereoscopicEye.Right);
+                    eye.transform.localPosition = new Vector3(0.0f, 0.0f, interpupillaryDistance * 0.5f);
+                    eye.RenderToCubemap(cubemaps[(int)CubemapIndex.Front], allMask | leftMask | rightMask, Camera.MonoOrStereoscopicEye.Left);
+                    eye.transform.localPosition = new Vector3(0.0f, 0.0f, -interpupillaryDistance * 0.5f);
+                    eye.RenderToCubemap(cubemaps[(int)CubemapIndex.Back], allMask | leftMask | rightMask, Camera.MonoOrStereoscopicEye.Right);
+                    eye.transform.localPosition = Vector3.zero;
                     break;
             }
 
             material.SetInteger("_EnableStereo", stereoMode == StereoscopicMode.Stereo ? 1 : 0);
+            
             material.SetFloat("_CavernHeight", cavernHeight);
             material.SetFloat("_CavernRadius", cavernRadius);
             material.SetFloat("_CavernAngle", cavernAngle);
             material.SetFloat("_CavernElevation", cavernElevation);
-            material.SetMatrix("_CameraRotation", Matrix4x4.identity);
+
+            // As we learnt in computer graphics class, the inverse of a rotation matrix is also it's transpose.
+            material.SetVector("_HeadPositionInverse", -head.transform.localPosition);
+            material.SetMatrix("_HeadRotationInverse", Matrix4x4.Rotate(head.transform.localRotation).transpose);
         }
 
         private void OnBeginContextRendering(ScriptableRenderContext context, List<Camera> cameras) {
@@ -189,14 +191,14 @@ namespace Spelunx {
         }
 
         private void OnBeginCameraRendering(ScriptableRenderContext context, Camera camera) {
-            if (camera == captureCamera) {
+            if (camera == eye) {
                 // UniversalRenderPipelineAsset urpAsset = (UniversalRenderPipelineAsset)GraphicsSettings.currentRenderPipeline;
                 // urpAsset.scriptableRenderer.EnqueuePass(projectionPass);
             }
         }
 
         private void OnEndCameraRendering(ScriptableRenderContext context, Camera camera) {
-            if (camera == captureCamera) {
+            if (camera == eye) {
                 Graphics.Blit(null, material);
             }
         }

@@ -30,10 +30,15 @@ float4 _CubemapBack_ST;
 
 // Other Material Properties
 int _EnableStereo;
+
 float _CavernHeight;
 float _CavernRadius;
 float _CavernAngle;
 float _CavernElevation;
+
+// Head Tracking Properties
+float3 _HeadPositionInverse; // Vector3
+float4x4 _HeadRotationInverse; // Matrix4x4
 
 // This attributes struct receives data about the mesh we are currently rendering.
 // Data is automatically placed in the fields according to their semantic.
@@ -88,7 +93,11 @@ float4 Fragment(Vert2Frag input) : SV_TARGET {
     float screenAngleRad = radians(screenAngle);
 
     // Take note that angle 0 points down the Z-axis, not the X-axis.
-    float3 uvCube = normalize(float3(_CavernRadius * sin(screenAngleRad), _CavernHeight * 0.5f * uv2d.y + _CavernElevation, _CavernRadius * cos(screenAngleRad)));
+    float3 uvCube = float3(_CavernRadius * sin(screenAngleRad), _CavernHeight * 0.5f * uv2d.y + _CavernElevation, _CavernRadius * cos(screenAngleRad));
+
+    // Now transform the screen by the inverse of the player's head position and rotation.
+    uvCube = mul(_HeadRotationInverse, float4(uvCube.x, uvCube.y, uvCube.z, 1.0f)).xyz;
+    uvCube += _HeadPositionInverse;
 
     // Monoscopic
     if (!_EnableStereo) {
