@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['readme_2emd_0',['README.md',['../da/ddd/README_8md.html',1,'']]],
-  ['reflectionutility_2ecs_1',['ReflectionUtility.cs',['../d7/d81/ReflectionUtility_8cs.html',1,'']]],
-  ['restorecursorstate_2ecs_2',['RestoreCursorState.cs',['../d4/d4d/RestoreCursorState_8cs.html',1,'']]]
+  ['patcher_2ecs_0',['Patcher.cs',['../d2/d55/Patcher_8cs.html',1,'']]],
+  ['placeholderwindow_2ecs_1',['PlaceholderWindow.cs',['../d6/d0a/PlaceholderWindow_8cs.html',1,'']]],
+  ['prefitem_2ecs_2',['PrefItem.cs',['../d0/d80/PrefItem_8cs.html',1,'']]]
 ];

@@ -1,13 +1,13 @@
 var searchData=
 [
-  ['gameviewlowresolutionaspectratios_0',['GameViewLowResolutionAspectRatios',['../d1/d34/classFullscreenEditor_1_1GameViewLowResolutionAspectRatios.html',1,'FullscreenEditor']]],
-  ['gameviewvsync_1',['GameViewVSync',['../d9/db6/classFullscreenEditor_1_1GameViewVSync.html',1,'FullscreenEditor']]],
-  ['gdi32_2',['GDI32',['../d3/d0b/classFullscreenEditor_1_1Windows_1_1GDI32.html',1,'FullscreenEditor::Windows']]],
-  ['globaltoolbarhiding_3',['GlobalToolbarHiding',['../d5/d1e/classFullscreenEditor_1_1GlobalToolbarHiding.html',1,'FullscreenEditor']]],
-  ['guibackgroundcolor_4',['GUIBackgroundColor',['../d3/dfd/structFullscreenEditor_1_1GUIBackgroundColor.html',1,'FullscreenEditor']]],
-  ['guicolor_5',['GUIColor',['../d6/d1d/structFullscreenEditor_1_1GUIColor.html',1,'FullscreenEditor']]],
-  ['guicontentcolor_6',['GUIContentColor',['../d0/d88/structFullscreenEditor_1_1GUIContentColor.html',1,'FullscreenEditor']]],
-  ['guienabled_7',['GUIEnabled',['../d1/d22/structFullscreenEditor_1_1GUIEnabled.html',1,'FullscreenEditor']]],
-  ['guifade_8',['GUIFade',['../d4/d37/classFullscreenEditor_1_1GUIFade.html',1,'FullscreenEditor']]],
-  ['guiindent_9',['GUIIndent',['../d5/da3/classFullscreenEditor_1_1GUIIndent.html',1,'FullscreenEditor']]]
+  ['fixgameviewmouseinput_0',['FixGameViewMouseInput',['../d2/d80/classFullscreenEditor_1_1FixGameViewMouseInput.html',1,'FullscreenEditor']]],
+  ['fullscreen_1',['Fullscreen',['../d3/dd5/classFullscreenEditor_1_1Fullscreen.html',1,'FullscreenEditor']]],
+  ['fullscreencallbacks_2',['FullscreenCallbacks',['../d4/d75/classFullscreenEditor_1_1FullscreenCallbacks.html',1,'FullscreenEditor']]],
+  ['fullscreencontainer_3',['FullscreenContainer',['../da/dd0/classFullscreenEditor_1_1FullscreenContainer.html',1,'FullscreenEditor']]],
+  ['fullscreenonplay_4',['FullscreenOnPlay',['../d9/d40/classFullscreenEditor_1_1FullscreenOnPlay.html',1,'FullscreenEditor']]],
+  ['fullscreenpreferences_5',['FullscreenPreferences',['../d8/d78/classFullscreenEditor_1_1FullscreenPreferences.html',1,'FullscreenEditor']]],
+  ['fullscreenrects_6',['FullscreenRects',['../dc/dd6/classFullscreenEditor_1_1FullscreenRects.html',1,'FullscreenEditor']]],
+  ['fullscreenutility_7',['FullscreenUtility',['../dd/d19/classFullscreenEditor_1_1FullscreenUtility.html',1,'FullscreenEditor']]],
+  ['fullscreenview_8',['FullscreenView',['../db/ddb/classFullscreenEditor_1_1FullscreenView.html',1,'FullscreenEditor']]],
+  ['fullscreenwindow_9',['FullscreenWindow',['../db/df0/classFullscreenEditor_1_1FullscreenWindow.html',1,'FullscreenEditor']]]
 ];

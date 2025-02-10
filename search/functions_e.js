@@ -14,7 +14,8 @@ var searchData=
   ['shortcut_11',['Shortcut',['../d7/dbe/classFullscreenEditor_1_1Shortcut.html#a029efecccbf75c2c5405ae7c12a1d7bb',1,'FullscreenEditor::Shortcut']]],
   ['showfullscreenexitnotification_12',['ShowFullscreenExitNotification',['../dd/d19/classFullscreenEditor_1_1FullscreenUtility.html#a831cafd0f53ae5f247b0617f74c110f0',1,'FullscreenEditor::FullscreenUtility']]],
   ['showfullscreennotification_13',['ShowFullscreenNotification',['../dd/d19/classFullscreenEditor_1_1FullscreenUtility.html#a2a58c6964f817f0e8eec76df9e0ad3b9',1,'FullscreenEditor::FullscreenUtility']]],
-  ['suppresslog_14',['SuppressLog',['../de/d31/classFullscreenEditor_1_1SuppressLog.html#a45857c00cce1e6df8b60bbb93a2d3887',1,'FullscreenEditor::SuppressLog']]],
-  ['swapmethods_15',['SwapMethods',['../d8/d29/classFullscreenEditor_1_1Patcher.html#a6822a95891dd6515f7f264d06802c197',1,'FullscreenEditor::Patcher']]],
-  ['swapviews_16',['SwapViews',['../db/ddb/classFullscreenEditor_1_1FullscreenView.html#aead5dd4ae5e107c8bb13781fca687811',1,'FullscreenEditor::FullscreenView']]]
+  ['showwindow_14',['ShowWindow',['../d8/d55/classSpelunx_1_1Window.html#af4145a382810d23bbe396628403cb802',1,'Spelunx::Window']]],
+  ['suppresslog_15',['SuppressLog',['../de/d31/classFullscreenEditor_1_1SuppressLog.html#a45857c00cce1e6df8b60bbb93a2d3887',1,'FullscreenEditor::SuppressLog']]],
+  ['swapmethods_16',['SwapMethods',['../d8/d29/classFullscreenEditor_1_1Patcher.html#a6822a95891dd6515f7f264d06802c197',1,'FullscreenEditor::Patcher']]],
+  ['swapviews_17',['SwapViews',['../db/ddb/classFullscreenEditor_1_1FullscreenView.html#aead5dd4ae5e107c8bb13781fca687811',1,'FullscreenEditor::FullscreenView']]]
 ];

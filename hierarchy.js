@@ -13,7 +13,8 @@ var hierarchy =
       [ "Spelunx.CavernScreenViewerInspector", "d8/d6c/classSpelunx_1_1CavernScreenViewerInspector.html", null ]
     ] ],
     [ "EditorWindow", null, [
-      [ "FullscreenEditor.PlaceholderWindow", "dc/d80/classFullscreenEditor_1_1PlaceholderWindow.html", null ]
+      [ "FullscreenEditor.PlaceholderWindow", "dc/d80/classFullscreenEditor_1_1PlaceholderWindow.html", null ],
+      [ "Spelunx.Window", "d8/d55/classSpelunx_1_1Window.html", null ]
     ] ],
     [ "FullscreenEditor.FixGameViewMouseInput", "d2/d80/classFullscreenEditor_1_1FixGameViewMouseInput.html", null ],
     [ "FullscreenEditor.Fullscreen", "d3/dd5/classFullscreenEditor_1_1Fullscreen.html", null ],
@@ -42,6 +43,8 @@ var hierarchy =
     [ "FullscreenEditor.MenuItems", "df/d28/classFullscreenEditor_1_1MenuItems.html", null ],
     [ "FullscreenEditor.Windows.MonitorInfoEx", "d7/d30/structFullscreenEditor_1_1Windows_1_1MonitorInfoEx.html", null ],
     [ "MonoBehaviour", null, [
+      [ "EvasiveMotion", "d3/d28/classEvasiveMotion.html", null ],
+      [ "MotionMirrorer", "de/dee/classMotionMirrorer.html", null ],
       [ "MoveWith", "d7/d6e/classMoveWith.html", null ],
       [ "Spelunx.CavernRenderer", "db/d6f/classSpelunx_1_1CavernRenderer.html", null ],
       [ "Spelunx.CavernScreenViewer", "d3/dc5/classSpelunx_1_1CavernScreenViewer.html", null ]
