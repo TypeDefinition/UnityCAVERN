@@ -64,6 +64,8 @@ namespace Spelunx.OVRT
         private UnityAction<string, TrackedDevicePose_t, int> _onNewBoundPoseAction;
         private UnityAction _onTrackerRolesChanged;
 
+        private Quaternion rotationAlignment = Quaternion.identity;
+
         private void OnDeviceConnected(int index, bool connected)
         {
             if (DeviceIndex == index && !connected)
@@ -99,7 +101,7 @@ namespace Spelunx.OVRT
             if (origin != null)
             {
                 transform.position = origin.transform.TransformPoint(rigidTransform.pos);
-                transform.rotation = origin.rotation * rigidTransform.rot;
+                transform.rotation = origin.rotation * rigidTransform.rot * Quaternion.Inverse(rotationAlignment);
             }
             else
             {
@@ -117,6 +119,15 @@ namespace Spelunx.OVRT
         private void OnButtonPressed(int deviceIndex, EVRButtonId button, bool pressed)
         {
             Debug.Log($"{deviceIndex}\t{button}\t{pressed}");
+        }
+
+        void Update()
+        {
+            if (Input.GetKey(KeyCode.C))
+            {
+                // calibrate
+                rotationAlignment = transform.rotation;
+            }
         }
 
         private void Awake()
