@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace OVRT
+namespace Spelunx.OVRT
 {
     public abstract class OVRT_TrackedDevice : MonoBehaviour
     {
@@ -11,6 +11,7 @@ namespace OVRT
         public bool IsValid { get; protected set; }
         public bool IsConnected { get; protected set; }
 
+        [HideInInspector]
         public UnityEvent<int> onDeviceIndexChanged;
 
         protected UnityAction<int, bool> _onDeviceConnectedAction;

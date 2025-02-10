@@ -1,11 +1,15 @@
 using UnityEngine;
 
-public class MoveWith : MonoBehaviour
+namespace Spelunx
 {
-    public Transform targetToCopy;
-
-    void Update()
+    public class MoveWith : MonoBehaviour
     {
-        transform.position = targetToCopy.position;
+        public Transform targetToCopy;
+
+        void Update()
+        {
+            transform.position = targetToCopy.position;
+        }
     }
 }
+

@@ -12,7 +12,7 @@ using UnityEngine.LowLevel;
 using UnityEngine.PlayerLoop;
 using Valve.VR;
 
-namespace OVRT
+namespace Spelunx.OVRT
 {
     /// <summary>
     /// Manages connection to OpenVR and dispatches new poses and events.
@@ -206,6 +206,14 @@ namespace OVRT
         private void OnDestroy()
         {
             OpenVR.Shutdown();
+
+            _vrSystem = null;
+        }
+
+        void OnApplicationQuit()
+        {
+            OpenVR.Shutdown();
+            _vrSystem = null;
         }
 
         private void Update()
@@ -247,7 +255,8 @@ namespace OVRT
                 return;
 
             // let's just put in a bunch of checks
-            if (_vrSystem.ShouldApplicationPause()) return;
+            // if (_vrSystem.ShouldApplicationPause()) return;
+            // if(OpenVR.System.IsTrackedDeviceConnected()))
             if (!_vrSystem.IsInputAvailable()) return;
 
             // not too sure about this check

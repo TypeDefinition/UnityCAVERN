@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using Valve.VR;
 
-namespace OVRT
+namespace Spelunx.OVRT
 {
     /// <summary>
     /// Maps tracked OpenVR poses to transform by serial number bindings. Can use tracker roles defined by SteamVR.
