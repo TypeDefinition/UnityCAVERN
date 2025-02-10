@@ -101,7 +101,12 @@ namespace Spelunx.OVRT
             if (origin != null)
             {
                 transform.position = origin.transform.TransformPoint(rigidTransform.pos);
-                transform.rotation = origin.rotation * rigidTransform.rot * Quaternion.Inverse(rotationAlignment);
+                if (Input.GetKey(KeyCode.C))
+                {
+                    // calibrate
+                    rotationAlignment = Quaternion.Inverse(origin.rotation * rigidTransform.rot);
+                }
+                transform.rotation = origin.rotation * rigidTransform.rot * rotationAlignment;
             }
             else
             {
@@ -119,15 +124,6 @@ namespace Spelunx.OVRT
         private void OnButtonPressed(int deviceIndex, EVRButtonId button, bool pressed)
         {
             Debug.Log($"{deviceIndex}\t{button}\t{pressed}");
-        }
-
-        void Update()
-        {
-            if (Input.GetKey(KeyCode.C))
-            {
-                // calibrate
-                rotationAlignment = transform.rotation;
-            }
         }
 
         private void Awake()
